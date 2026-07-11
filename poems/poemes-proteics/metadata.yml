@@ -1,0 +1,17 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: Poemes proteics
+slug: poemes-proteics
+author: Miquel Duran-Frigola
+date: 2026-07-11
+language: ca
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: nom-de-l-eina
+    description: Breu descripció de com s'ha fet servir l'eina.
+# Free-form tags for grouping / filtering on the website.
+tags:
+  - exemple
+# Multi-line description of the poem and the process behind it (Catalan).
+description: |
+  Descripció del poema i del procés computacional que l'ha assistit.

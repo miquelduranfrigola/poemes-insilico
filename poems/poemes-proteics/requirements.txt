@@ -1,0 +1,3 @@
+# Python dependencies for this poem's code. Pin versions for reproducibility.
+# Example:
+# numpy==2.1.0
