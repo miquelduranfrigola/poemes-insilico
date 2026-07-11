@@ -1,3 +1,15 @@
+# --- poemes-computacionals ---
+# Generated website
+_site/
+# Per-poem virtualenvs
+**/.venv/
+# Large assets downloaded from Google Drive (only drive-manifest.yml is tracked)
+poems/*/assets/*
+!poems/*/assets/drive-manifest.yml
+!poems/*/assets/.gitkeep
+shared/assets/*
+!shared/assets/.gitkeep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

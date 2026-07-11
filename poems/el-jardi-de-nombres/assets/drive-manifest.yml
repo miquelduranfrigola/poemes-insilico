@@ -1,0 +1,9 @@
+# Large assets stored on Google Drive (audio, video, datasets, big images).
+# The bytes are NOT committed to git — only these links are. `scripts/fetch_assets.py`
+# downloads each entry to its `path`. Downloaded files under assets/ are gitignored.
+#
+# Example entry:
+# - name: raw-audio
+#   path: assets/raw-audio.wav      # where the file is placed locally
+#   url: https://drive.google.com/uc?id=FILE_ID
+#   bytes: 5242880                  # optional, informational

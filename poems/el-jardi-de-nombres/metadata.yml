@@ -1,0 +1,19 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: El jardí de nombres
+slug: el-jardi-de-nombres
+author: Miquel Duran-Frigola
+date: 2026-07-11
+language: ca
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: generador-de-primers
+    description: Un petit script en Python que genera nombres primers i n'extreu ritmes.
+# Free-form tags for grouping / filtering on the website.
+tags:
+  - exemple
+  - generatiu
+# Multi-line description of the poem and the process behind it (Catalan).
+description: |
+  Poema d'exemple que serveix de plantilla de referència per al recull.
+  El text s'inspira en una seqüència de nombres primers generada per codi.

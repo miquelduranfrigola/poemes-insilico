@@ -1,0 +1,7 @@
+# Repo-wide large assets shared across poems (fonts, datasets, background media).
+# Same schema as a poem's assets/drive-manifest.yml. Fetch with:
+#   python scripts/fetch_assets.py shared/drive-manifest.yml
+#
+# - name: shared-dataset
+#   path: assets/shared-dataset.csv
+#   url: https://drive.google.com/uc?id=FILE_ID
