@@ -1,0 +1,5 @@
+poem,n_units,n_residues,rg,rg_expected,compactness,anisotropy,sphericity,mean_plddt,score
+salvat-res-no-es-mesqui,2,648,22.511,19.908,0.885,0.021,0.979,29.319,0.745
+pere-quart-corrandes-exili,3,793,22.982,20.752,0.9,0.047,0.953,30.397,0.742
+foix-es-quan-dormo,2,686,23.093,20.307,0.879,0.074,0.926,32.631,0.732
+maragall-la-vaca-cega,2,755,23.871,20.989,0.88,0.051,0.949,27.527,0.726

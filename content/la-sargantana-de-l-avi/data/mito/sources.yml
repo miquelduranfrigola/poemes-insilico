@@ -1,0 +1,66 @@
+Podarcis muralis:
+  accession: NC_011607.1
+  length_bp: 17311
+  clade: Lacertidae
+  role: ingroup
+  common_ca: sargantana de paret
+  common_en: common wall lizard
+  features:
+    CDS: 13
+    rRNA: 2
+    tRNA: 22
+Lacerta viridis:
+  accession: NC_008328.1
+  length_bp: 17156
+  clade: Lacertidae
+  role: ingroup
+  common_ca: llangardaix verd
+  common_en: European green lizard
+  features:
+    CDS: 13
+    rRNA: 2
+    tRNA: 22
+Varanus salvator:
+  accession: NC_010974.1
+  length_bp: 17489
+  clade: Varanidae
+  role: ingroup
+  common_ca: varà aquàtic
+  common_en: water monitor
+  features:
+    CDS: 13
+    rRNA: 2
+    tRNA: 22
+Heloderma suspectum:
+  accession: NC_008776.1
+  length_bp: 16846
+  clade: Helodermatidae
+  role: ingroup
+  common_ca: monstre de Gila
+  common_en: Gila monster
+  features:
+    CDS: 13
+    rRNA: 2
+    tRNA: 22
+Anolis carolinensis:
+  accession: EU747728.2
+  length_bp: 17223
+  clade: Iguania
+  role: ingroup
+  common_ca: anolis verd
+  common_en: green anole
+  features:
+    CDS: 13
+    rRNA: 2
+    tRNA: 21
+Gekko gecko:
+  accession: NC_007627.1
+  length_bp: 16435
+  clade: Gekkota
+  role: outgroup
+  common_ca: dragó tokay
+  common_en: tokay gecko
+  features:
+    CDS: 13
+    rRNA: 2
+    tRNA: 22

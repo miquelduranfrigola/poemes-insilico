@@ -15,7 +15,7 @@ scaffolder) and readers can rely on a predictable layout.
 
 ## The poem unit
 
-Every poem lives in its own folder under `poems/<slug>/`. The `<slug>` is a
+Every poem lives in its own folder under `content/<slug>/`. The `<slug>` is a
 lowercase ASCII slug derived from the Catalan title, accents stripped, words
 joined with hyphens (e.g. *"El jardí de nombres"* → `el-jardi-de-nombres`).
 
@@ -28,8 +28,16 @@ Each poem folder contains the **same fixed filenames**:
 | `README.md` | English | Notes on the computational method + how to run. |
 | `install.sh` | — | Portable env setup + Drive asset fetch (contract below). |
 | `requirements.txt` | — | Python dependencies for this poem's code (optional). |
-| `code/` | English | Python code that assisted the poem. Entry point `main.py`. |
+| `code/` | English | Python code. `main.py` = computation entry; `build_web.py` = builds the page. |
+| `results/index.html` | — | The self-contained web page (served by the site; see below). |
 | `assets/drive-manifest.yml` | — | Links to large assets on Google Drive. |
+
+Each piece ships **one self-contained web page** at the fixed path
+`results/index.html`, built by `code/build_web.py` (inlining fonts/assets, no
+external requests), and wired into the site via `page: results/index.html` in
+`metadata.yml`. Heavy intermediates (`cache/`, `results/snapshots/`,
+`results/videos/`, big raw inputs) are git-ignored; only `results/index.html` is
+committed.
 
 Start a new poem by copying `_template/poem/`, or run
 `python scripts/new_poem.py "Títol en català"`.
@@ -42,6 +50,7 @@ slug: el-jardi-de-nombres         # must match the folder name
 author: Miquel Duran-Frigola
 date: 2026-07-11                  # ISO date (YYYY-MM-DD); drives site ordering
 language: ca
+page: results/index.html         # self-contained page served verbatim by the site
 tools:                            # computational tools used (may be empty)
   - name: nom-de-l-eina
     description: Com s'ha fet servir (Catalan).
@@ -58,7 +67,7 @@ description: |                    # Catalan, multi-line
 Large or binary assets (audio, video, datasets, big images) are **not committed
 to git**. Instead:
 
-- List them in a `drive-manifest.yml` — per poem (`poems/<slug>/assets/`) and/or
+- List them in a `drive-manifest.yml` — per poem (`content/<slug>/assets/`) and/or
   repo-wide (`shared/drive-manifest.yml`).
 - `scripts/fetch_assets.py` downloads each entry to its `path`.
 - Downloaded bytes under `assets/` are gitignored; only the manifest is tracked.
@@ -88,19 +97,21 @@ This keeps every poem independently reproducible.
 
 ## Website
 
-The site builder (`site/build_site.py`) reads every `poems/<slug>/metadata.yml`
-and renders `poem.md` into an index page plus one page per poem under `_site/`.
-The markdown + metadata are the single source of truth — authors never edit
-HTML. GitHub Actions (`.github/workflows/pages.yml`) builds and deploys `_site`
-to GitHub Pages on every push to `main`.
+The site builder (`site/build_site.py`) reads every `content/<slug>/metadata.yml`
+and produces a **left-index shell** (`_site/index.html`) that lists every piece and
+shows the selected one in an iframe. Each piece is served from its committed
+`results/index.html` via the `page:` key (the builder copies it verbatim to
+`_site/<slug>/index.html`); a piece without `page:` falls back to templated
+`poem.md` rendering. The whole site shares one look — Space Mono on cream. GitHub
+Actions (`.github/workflows/pages.yml`) builds and deploys `_site` on push to `main`.
 
 ## Repository layout
 
 ```
-poems/<slug>/        one folder per poem (the unit above)
+content/<slug>/       one folder per poem (the unit above)
 _template/poem/       copy-me skeleton for a new poem
-shared/               small shared assets + repo-wide drive-manifest.yml
+shared/               small shared assets, repo-wide drive-manifest.yml, vendor/ (fonts)
 scripts/              new_poem.py (scaffold), fetch_assets.py (Drive)
-site/                 build_site.py, templates/, static/, requirements.txt
+site/                 build_site.py, templates/, static/ (style.css, spacemono.css)
 .github/workflows/    pages.yml (build + deploy)
 ```

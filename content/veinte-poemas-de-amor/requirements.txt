@@ -1,0 +1,5 @@
+# Python dependencies for this poem's code. Pin versions for reproducibility.
+# deep-translator: only needed to RE-RUN the 104-language chain live
+# (code/main.py --run, via code/despoetize.py). Neither the archived results
+# nor the gallery build (code/build_gallery.py) require any third-party package.
+deep-translator==1.11.4

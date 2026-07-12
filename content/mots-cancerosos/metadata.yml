@@ -1,0 +1,47 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: Mots cancerosos
+slug: mots-cancerosos
+author: Miquel Duran-Frigola
+date: 2026-07-11
+language: ca
+# Self-contained page served as this poem's website page (the mutation animation),
+# built by code/build_web.py. Overrides the default poem.md rendering.
+page: results/index.html
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: model de mutació (codi propi)
+    description: >-
+      Algorisme que fa mutar una paraula com un tumor —substitucions, delecions
+      i insercions— reproduint la freqüència d'aquests tipus de mutació observada
+      en el càncer (~90% substitucions; delecions més freqüents que insercions), i
+      amb biaix de transició/transversió mapat a vocals i consonants.
+  - name: diccionari català (Softcatalà catalan-dictionary)
+    description: >-
+      Lèxic català de forma→lema→categoria (derivat del DIEC i el DNV) del qual
+      s'extreuen només els lemes de mots de classe oberta (noms, verbs, adjectius,
+      adverbis). Fa de filtre de selecció: una mutació només sobreviu si dona una
+      paraula canònica de diccionari —mai un plural ni una conjugació—, de manera
+      que no hi ha repeticions morfològiques avorrides.
+  - name: wordfreq
+    description: >-
+      Freqüència d'ús real (escala Zipf) del català; s'usa en construir el lèxic
+      per quedar-nos només amb els lemes prou corrents (mots «importants»).
+# Free-form tags for grouping / filtering on the website.
+tags:
+  - generatiu
+  - restriccio
+  - biologia
+  - mutacio
+  - cancer
+# Multi-line description of the poem and the process behind it (Catalan).
+description: |
+  Un poema on una paraula muta com un tumor i, tot i així, continua sent una
+  paraula vàlida. Tractem la paraula com un petit genoma: acumula mutacions
+  —substitucions, delecions i insercions— amb les freqüències que s'observen en
+  el càncer, però només sobreviuen les que donen una paraula catalana real. Aquest
+  filtre de validesa és, de fet, la selecció: les mutacions «letals» moren i les
+  «viables» segueixen. El resultat és un arbre clonal —una filogènia tumoral de
+  mots— on cada node és una paraula i cada branca, una mutació que ha sobreviscut.
+  El procés revela dos espectres, com en la genòmica del càncer real: el de les
+  mutacions proposades i el de les que sobreviuen a la selecció.

@@ -6,13 +6,14 @@ ajudat a néixer. El recull es publica com a lloc web amb GitHub Pages.
 
 ## Estructura
 
-Cada poema viu a `poems/<slug>/` amb sempre els mateixos fitxers:
+Cada poema viu a `content/<slug>/` amb sempre els mateixos fitxers:
 
 - `poem.md` — el poema (català)
-- `metadata.yml` — títol, autoria, data, eines, etiquetes, descripció
+- `metadata.yml` — títol, autoria, data, eines, etiquetes, descripció, `page:`
 - `README.md` — notes del mètode computacional (anglès)
 - `install.sh` — prepara l'entorn i baixa els fitxers grans de Google Drive
-- `code/` — el codi en Python (anglès)
+- `code/` — el codi en Python (`main.py` calcula; `build_web.py` genera la pàgina)
+- `results/index.html` — la pàgina web autocontinguda de la peça
 - `assets/drive-manifest.yml` — enllaços als fitxers grans a Google Drive
 
 L'especificació completa i compartida entre repositoris és a

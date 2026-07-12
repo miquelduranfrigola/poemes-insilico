@@ -1,0 +1,107 @@
+[
+  {
+    "id": "poema01",
+    "title": "Poema 1",
+    "incipit": "Cuerpo de mujer, blancas colinas, muslos blancos,"
+  },
+  {
+    "id": "poema02",
+    "title": "Poema 2",
+    "incipit": "En su llama mortal la luz te envuelve."
+  },
+  {
+    "id": "poema03",
+    "title": "Poema 3",
+    "incipit": "Ah vastedad de pinos, rumor de olas quebrándose,"
+  },
+  {
+    "id": "poema04",
+    "title": "Poema 4",
+    "incipit": "Es la mañana llena de tempestad"
+  },
+  {
+    "id": "poema05",
+    "title": "Poema 5",
+    "incipit": "Para que tú me oigas"
+  },
+  {
+    "id": "poema06",
+    "title": "Poema 6",
+    "incipit": "Te recuerdo como eras en el último otoño."
+  },
+  {
+    "id": "poema07",
+    "title": "Poema 7",
+    "incipit": "Inclinado en las tardes tiro mis tristes redes"
+  },
+  {
+    "id": "poema08",
+    "title": "Poema 8",
+    "incipit": "Abeja blanca zumbas -ebria de miel- en mi alma"
+  },
+  {
+    "id": "poema09",
+    "title": "Poema 9",
+    "incipit": "Ebrio de trementina y largos besos,"
+  },
+  {
+    "id": "poema10",
+    "title": "Poema 10",
+    "incipit": "Hemos perdido aun este crepúsculo."
+  },
+  {
+    "id": "poema11",
+    "title": "Poema 11",
+    "incipit": "Casi fuera del cielo ancla entre dos montañas"
+  },
+  {
+    "id": "poema12",
+    "title": "Poema 12",
+    "incipit": "Para mi corazón basta tu pecho,"
+  },
+  {
+    "id": "poema13",
+    "title": "Poema 13",
+    "incipit": "He ido marcando con cruces de fuego"
+  },
+  {
+    "id": "poema14",
+    "title": "Poema 14",
+    "incipit": "Juegas todos los días con la luz del universo."
+  },
+  {
+    "id": "poema15",
+    "title": "Poema 15",
+    "incipit": "Me gustas cuando callas porque estás como ausente,"
+  },
+  {
+    "id": "poema16",
+    "title": "Poema 16",
+    "incipit": "En mi cielo al crepúsculo eres como una nube"
+  },
+  {
+    "id": "poema17",
+    "title": "Poema 17",
+    "incipit": "Pensando, enredando sombras en la profunda soledad."
+  },
+  {
+    "id": "poema18",
+    "title": "Poema 18",
+    "incipit": "Aquí te amo."
+  },
+  {
+    "id": "poema19",
+    "title": "Poema 19",
+    "incipit": "Niña morena y ágil, el sol que hace las frutas,"
+  },
+  {
+    "id": "poema20",
+    "title": "Poema 20",
+    "incipit": "Puedo escribir los versos más tristes esta noche."
+  },
+  {
+    "id": "cancion",
+    "title": "La canción desesperada",
+    "incipit": "Emerge tu recuerdo de la noche en que estoy."
+  }
+]

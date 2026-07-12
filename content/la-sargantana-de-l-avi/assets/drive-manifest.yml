@@ -1,0 +1,7 @@
+# Large assets stored on Google Drive (audio, video, datasets, big images).
+# The bytes are NOT committed to git — only these links are. `scripts/fetch_assets.py`
+# downloads each entry to its `path`. Downloaded files under assets/ are gitignored.
+#
+# This poem has no large assets: the input sequences (data/cytb/) are tiny public
+# GenBank records and are committed directly, so the reconstruction is reproducible
+# offline. Left empty on purpose.

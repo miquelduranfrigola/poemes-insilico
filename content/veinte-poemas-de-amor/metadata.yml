@@ -1,0 +1,42 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: Veinte poemas de amor
+slug: veinte-poemas-de-amor
+author: Miquel Duran-Frigola
+date: 2026-07-12
+language: ca
+# Self-contained page served as this poem's website page (the despoetization
+# gallery), built by code/build_web.py. Overrides the default poem.md rendering.
+page: results/index.html
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: traductor automàtic de Google
+    description: >-
+      Motor de traducció que encadena 104 traduccions successives per fer donar
+      la volta a cada poema per tot l'abecedari de llengües de Google i tornar-lo
+      al castellà. La degradació acumulada del sentit —allò que es perd en cada
+      traducció— és el mecanisme que «despoetitza» el text.
+  - name: deep-translator
+    description: >-
+      Client de Python que permet reproduir avui la cadena de 104 llengües
+      (code/despoetize.py). Els resultats d'una nova tirada difereixen dels de
+      2016, perquè el traductor canvia contínuament.
+# Free-form tags for grouping / filtering on the website.
+tags:
+  - traduccio
+  - degradacio
+  - found-poetry
+  - oulipo
+  - neruda
+# Multi-line description of the poem and the process behind it (Catalan).
+description: |
+  «Poetry is what gets lost in translation», deia Robert Frost. Aquest poema
+  agafa els *Veinte poemas de amor y una canción desesperada* de Pablo Neruda i
+  els fa travessar 104 traduccions automàtiques encadenades —del castellà a
+  l'estonià, al basc, i així tota la volta de l'abecedari de llengües de Google
+  fins a tornar al castellà. A cada salt el poema perd una mica més; el que en
+  torna és el residu *despoetitzat*, un sediment de sentit alhora absurd i
+  revelador. Es mostren els resultats de la tirada original de 2016, sense cap
+  modificació més enllà de petites correccions gramaticals. La galeria interactiva
+  deixa veure, per a cada poema, l'original de Neruda al costat del seu residu, i
+  anima el pas de les 104 llengües que el dissolen.

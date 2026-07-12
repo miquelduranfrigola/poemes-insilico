@@ -1,0 +1,6 @@
+# Python dependencies for this poem's code. Pin versions for reproducibility.
+# wordfreq: real-usage frequency (Zipf) for Catalan, used by code/build_lexicon.py
+# to keep only "important" (commonly used) canonical headwords when building the
+# lexicon. The mutation engine itself (code/main.py) needs no third-party deps —
+# it just reads the generated data/lexicon/lemmas.txt.
+wordfreq==3.1.1

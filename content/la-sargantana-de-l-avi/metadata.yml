@@ -1,0 +1,40 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: La sargantana de l'avi
+slug: la-sargantana-de-l-avi
+author: Miquel Duran-Frigola
+date: 2026-07-12
+language: ca
+# Self-contained page served as this poem's website page, built by code/build_web.py.
+page: results/index.html
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: NCBI Entrez / Biopython
+    description: >-
+      Descàrrega dels genomes mitocondrials complets de sis llangardaixos vius i
+      extracció de tots els gens, des de GenBank.
+  - name: Reconstrucció de seqüències ancestrals (ASR)
+    description: >-
+      Model HKY85 i algorisme de poda de Felsenstein per inferir, per màxima
+      versemblança, el genoma mitocondrial de l'avantpassat comú i la certesa de
+      cada base.
+  - name: matplotlib
+    description: >-
+      Mapa de la certesa de la reconstrucció al llarg del genoma mitocondrial.
+# Free-form tags for grouping / filtering on the website.
+tags:
+  - genètica
+  - filogènia
+  - memòria
+  - Banyoles
+# Multi-line description of the poem and the process behind it (Catalan).
+description: |
+  L'avi deia que havia trobat un llangardaix fòssil a la vora de l'estany de
+  Banyoles. No en queda cap resta ni ADN, però sí els seus parents vius. Aquest
+  poema reconstrueix, amb bioinformàtica de veritat, el genoma mitocondrial de
+  l'avantpassat comú de la humil sargantana de paret (*Podarcis muralis*) i el varà
+  aquàtic (*Varanus salvator*): reconstrucció de seqüències ancestrals de tot el
+  genoma mitocondrial —gens, ARN ribosòmics i ARN de transferència— a partir de sis
+  espècies vives. El poema és el propi genoma inferit, escrit en majúscules allà on
+  cent setanta milions d'anys l'han conservat intacte i en codis d'ambigüitat allà
+  on el temps l'ha esborrat.

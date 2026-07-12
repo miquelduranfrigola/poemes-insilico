@@ -15,7 +15,7 @@ The structure is a shared standard meant to be replicated across sibling "poemes
 
 ## Structure
 
-- `poems/<slug>/` — one folder per poem, the standardised unit. `<slug>` is an accent-stripped ASCII slug of the Catalan title. Fixed filenames: `poem.md` (Catalan), `metadata.yml`, `README.md` (English), `install.sh`, `requirements.txt`, `code/main.py`, `assets/drive-manifest.yml`.
+- `content/<slug>/` — one folder per poem, the standardised unit. `<slug>` is an accent-stripped ASCII slug of the Catalan title. Fixed filenames: `poem.md` (Catalan), `metadata.yml`, `README.md` (English), `install.sh`, `requirements.txt`, `code/main.py` (computation) + `code/build_web.py` (builds the page), `results/index.html` (the self-contained web page, wired via `page:`), `assets/drive-manifest.yml`.
 - `_template/poem/` — copy-me skeleton mirroring the poem unit.
 - `shared/` — small shared assets + repo-wide `drive-manifest.yml`.
 - `scripts/` — `new_poem.py` (scaffold), `fetch_assets.py` (Drive downloads).
@@ -29,21 +29,21 @@ Large/binary assets are **never committed**. They are listed in `drive-manifest.
 ## Common commands
 
 ```bash
-# Add a new poem (scaffolds poems/<slug>/ from _template/poem)
+# Add a new poem (scaffolds content/<slug>/ from _template/poem)
 python scripts/new_poem.py "Títol del poema en català"
 
 # Set up one poem's isolated env and pull its Drive assets
-cd poems/<slug> && bash install.sh
+cd content/<slug> && bash install.sh
 
 # Fetch large assets for a manifest without a full install
-python scripts/fetch_assets.py poems/<slug>/assets/drive-manifest.yml
+python scripts/fetch_assets.py content/<slug>/assets/drive-manifest.yml
 
 # Build the website locally into ./_site
 pip install -r site/requirements.txt
 python site/build_site.py            # add --out DIR to change output
 ```
 
-The site builder is the source of truth: it reads each `poems/<slug>/metadata.yml` and renders `poem.md` to HTML. Never hand-edit generated HTML — edit the markdown/metadata and rebuild.
+The site builder reads each `content/<slug>/metadata.yml` and builds a left-index shell that shows each piece (its committed `results/index.html`, wired via `page:`) in an iframe. Rebuild the page with the piece's `code/build_web.py`; rebuild the site with `site/build_site.py`.
 
 ## Conventions to preserve
 

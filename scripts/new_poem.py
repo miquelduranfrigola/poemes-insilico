@@ -5,7 +5,7 @@ Usage:
     python scripts/new_poem.py "El jardí de nombres"
     python scripts/new_poem.py "El jardí de nombres" --slug el-jardi
 
-Creates `poems/<slug>/` with the standardised files, pre-filling the title,
+Creates `content/<slug>/` with the standardised files, pre-filling the title,
 slug and date in `metadata.yml`. Refuses to overwrite an existing poem.
 """
 
@@ -21,7 +21,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = REPO_ROOT / "_template" / "poem"
-POEMS_DIR = REPO_ROOT / "poems"
+POEMS_DIR = REPO_ROOT / "content"
 
 
 def slugify(text: str) -> str:

@@ -1,0 +1,4 @@
+# Large, reproducible data fetched/built by code/build_lexicon.py — not committed.
+lexicon/
+# (Legacy) Hunspell dictionary, if fetched by an older setup.
+dictionary/

@@ -1,0 +1,53 @@
+log-likelihood: -80378.651
+kappa (ti/tv): 2.092
+base frequencies A C G T: 0.310 0.258 0.144 0.288
+reconstructed length: 15291 bp across 36 features
+
+branch lengths (expected substitutions/site):
+  R->Podarcis side / Podarcis  0.0911
+  Lacerta                      0.1246
+  Varanus                      0.2377
+  Heloderma                    0.1884
+  Anolis                       0.1909
+  Toxicofera->Anguimorpha      0.0449
+  R->Lacertoidea               0.0970
+  R->Toxicofera                0.0406
+  R->Gekko (outgroup)          0.2739
+
+per-feature mean posterior (conserved -> variable):
+  ATP8     CDS    159 bp   0.900
+  ND4L     CDS    294 bp   0.912
+  ND5      CDS   1821 bp   0.916
+  ATP6     CDS    678 bp   0.920
+  ND2      CDS   1029 bp   0.921
+  ND6      CDS    513 bp   0.922
+  ND4      CDS   1380 bp   0.922
+  trnQ     tRNA    71 bp   0.929
+  trnV     tRNA    70 bp   0.929
+  trnG     tRNA    68 bp   0.930
+  trnS2    tRNA    64 bp   0.935
+  CYTB     CDS   1140 bp   0.935
+  ND3      CDS    345 bp   0.939
+  trnL1    tRNA    73 bp   0.939
+  trnS1    tRNA    73 bp   0.939
+  ND1      CDS    966 bp   0.941
+  trnC     tRNA    67 bp   0.941
+  trnY     tRNA    71 bp   0.943
+  COX1     CDS   1542 bp   0.944
+  trnF     tRNA    73 bp   0.945
+  COX3     CDS    783 bp   0.945
+  trnI     tRNA    72 bp   0.946
+  trnD     tRNA    70 bp   0.947
+  trnN     tRNA    73 bp   0.948
+  rrnL     rRNA  1538 bp   0.949
+  trnH     tRNA    68 bp   0.950
+  trnK     tRNA    65 bp   0.951
+  rrnS     rRNA   955 bp   0.951
+  COX2     CDS    687 bp   0.952
+  trnL2    tRNA    71 bp   0.954
+  trnA     tRNA    69 bp   0.955
+  trnW     tRNA    69 bp   0.957
+  trnP     tRNA    69 bp   0.958
+  trnE     tRNA    69 bp   0.961
+  trnT     tRNA    68 bp   0.963
+  trnM     tRNA    68 bp   0.978

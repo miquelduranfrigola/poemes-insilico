@@ -1,0 +1,34 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: Poemes proteics
+slug: poemes-proteics
+author: Miquel Duran-Frigola
+date: 2026-07-11
+language: ca
+# A self-contained interactive gallery is served verbatim instead of poem.md.
+page: results/index.html
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: rúbrica català → aminoàcids
+    description: >-
+      Codi propi que tradueix cada lletra catalana a un aminoàcid (o a un parell
+      amb el prefix d'escapament W), convertint el poema en una seqüència proteica.
+  - name: ESMFold (ESM Atlas)
+    description: >-
+      Predicció de l'estructura 3D de cada seqüència, plegant els poemes com si
+      fossin proteïnes (una sola seqüència, sense MSA).
+  - name: PyMOL · 3Dmol.js
+    description: >-
+      Renderització de les estructures i visor interactiu al web, amb el ressaltat
+      sincronitzat de paraula, seqüència i residus.
+tags:
+  - proteines
+  - plegament
+  - bioinformatica
+  - oulipo
+  - restriccio
+description: |
+  Cada poema es reescriu, lletra a lletra, com una proteïna i es plega amb ESMFold.
+  El web és una lectura tipus karaoke: a mesura que avança el poema, s'omplen en
+  paral·lel la seqüència d'aminoàcids i l'estructura tridimensional. Una manera de
+  preguntar-se quina forma tindria un poema si fos una molècula.

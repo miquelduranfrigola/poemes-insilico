@@ -4,11 +4,20 @@ _site/
 # Per-poem virtualenvs
 **/.venv/
 # Large assets downloaded from Google Drive (only drive-manifest.yml is tracked)
-poems/*/assets/*
-!poems/*/assets/drive-manifest.yml
-!poems/*/assets/.gitkeep
+content/*/assets/*
+!content/*/assets/drive-manifest.yml
+!content/*/assets/.gitkeep
 shared/assets/*
 !shared/assets/.gitkeep
+# macOS / editor cruft
+.DS_Store
+# Heavy, regenerable per-piece artifacts (the served results/index.html IS tracked)
+content/*/cache/
+content/*/results/snapshots/
+content/*/results/videos/
+content/*/results/*.pdb
+# Large raw inputs (regenerable or fetched; not committed)
+content/mots-cancerosos/data/lexicon/diccionari.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

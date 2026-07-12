@@ -1,0 +1,8 @@
+# SPARQL: every Wikidata item that has BOTH a PubChem CID (P662) and a Catalan
+# label. Lean query (no optionals/order) so WDQS does not time out; enrich with
+# SMILES/formula separately if needed. Run against
+# https://query.wikidata.org/sparql (see fetch_wikidata_ca.sh).
+SELECT ?item ?name_ca ?cid WHERE {
+  ?item wdt:P662 ?cid .
+  ?item rdfs:label ?name_ca . FILTER(lang(?name_ca) = "ca")
+}
