@@ -165,7 +165,7 @@ def build() -> Path:
     menu = []
     for s in catalog:
         menu.append(f'<li><a data-target="poem-{s}" href="#poem-{s}">{html.escape(title_of(s))}</a></li>')
-    menu.append('<li class="foot"><a data-target="rubric" href="#rubric">Metodologia</a></li>')
+    menu.append('<li class="meto"><a data-target="rubric" href="#rubric">Metodologia</a></li>')
     default = f"poem-{catalog[0]}" if catalog else "rubric"
 
     data_out: dict = {}
@@ -212,8 +212,8 @@ _TEMPLATE = r"""<title>Poemes proteics</title>
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
   .menu li a{ display:block; padding:3px 0; }
   .menu li a.on{ text-decoration:underline; text-underline-offset:3px; }
-  .menu li.foot{ margin-top:26px; padding-top:12px; border-top:1px solid var(--hair); }
-  .menu li.foot a{ color:var(--muted); font-size:11px; }
+  .menu li.meto{ margin-top:18px; padding-top:14px; border-top:1px solid var(--hair); }
+  .menu li.meto a{ color:var(--ink); font-size:14px; }
 
   .view{ flex:1; min-width:0; }
   .entry{ max-width:1000px; margin:0 auto; padding:clamp(40px,7vw,104px) clamp(22px,6vw,80px); }
@@ -270,7 +270,8 @@ _TEMPLATE = r"""<title>Poemes proteics</title>
 
 <div class="wrap"><div class="site">
   <nav class="index">
-    <div class="brand"><a data-target="{{DEFAULT}}" href="#{{DEFAULT}}"><b>Poemes proteics</b></a></div>
+    <div class="brand"><a data-target="{{DEFAULT}}" href="#{{DEFAULT}}"><b>Poemes proteics</b></a>
+      <span>de lletra a proteïna</span></div>
     <ol class="menu">{{MENU}}</ol>
   </nav>
   <main class="view">

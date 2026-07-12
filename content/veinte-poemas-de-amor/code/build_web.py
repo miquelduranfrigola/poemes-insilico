@@ -84,8 +84,7 @@ def _method_entry() -> str:
         for c in seq)
     return f"""
     <section class="entry" id="metodologia" hidden>
-      <p class="kicker">Mètode</p>
-      <h1 class="title">Despoetització</h1>
+      <h1 class="title">Metodologia</h1>
       <p class="epigraph">«Poetry is what gets lost in translation.» — Robert Frost</p>
 
       <p class="prose">Cada poema d'amor de Neruda ha travessat 104 traduccions
@@ -115,7 +114,7 @@ def build() -> Path:
 
     menu = [f'<li><a data-target="p-{m["id"]}" href="#p-{m["id"]}">'
             f'{html.escape(m["title"])}</a></li>' for m in meta]
-    menu.append('<li class="foot"><a data-target="metodologia" '
+    menu.append('<li class="meto"><a data-target="metodologia" '
                 'href="#metodologia">Metodologia</a></li>')
 
     entries = "".join(_entry(m, i == 0) for i, m in enumerate(meta)) + _method_entry()
@@ -162,8 +161,8 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
   .menu li a{ display:block; padding:3px 0; }
   .menu li a.on{ text-decoration:underline; text-underline-offset:3px; }
-  .menu li.foot{ margin-top:26px; padding-top:12px; border-top:1px solid var(--hair); }
-  .menu li.foot a{ color:var(--muted); font-size:11px; }
+  .menu li.meto{ margin-top:18px; padding-top:14px; border-top:1px solid var(--hair); }
+  .menu li.meto a{ color:var(--ink); font-size:14px; }
 
   .view{ flex:1; min-width:0; }
   .entry{ max-width:1000px; margin:0 auto; padding:clamp(40px,7vw,104px) clamp(22px,6vw,80px); }

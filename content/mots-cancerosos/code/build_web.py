@@ -112,8 +112,8 @@ _TEMPLATE = r"""<title>Mots cancerosos</title>
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
   .menu li a{ display:block; padding:3px 0; }
   .menu li a.on{ text-decoration:underline; text-underline-offset:3px; }
-  .menu li.foot{ margin-top:26px; padding-top:12px; border-top:1px solid var(--hair); }
-  .menu li.foot a{ color:var(--muted); font-size:11px; }
+  .menu li.meto{ margin-top:18px; padding-top:14px; border-top:1px solid var(--hair); }
+  .menu li.meto a{ color:var(--ink); font-size:14px; }
 
   .view{ flex:1; min-width:0; }
   .entry{ max-width:1000px; margin:0 auto; padding:clamp(40px,7vw,104px) clamp(22px,6vw,80px); }
@@ -154,8 +154,7 @@ _TEMPLATE = r"""<title>Mots cancerosos</title>
       <span>l'evolució d'un poema</span></div>
     <ol class="menu">
       <li><a data-target="poem" href="#poem" class="on">Res no és mesquí (mutant)</a></li>
-      <li><a data-target="metode" href="#metode">Metodologia</a></li>
-      <li class="foot"><a href="../index.html" target="_top">‹ Tots els poemes</a></li>
+      <li class="meto"><a data-target="metode" href="#metode">Metodologia</a></li>
     </ol>
   </nav>
   <main class="view">

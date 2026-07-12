@@ -57,6 +57,7 @@ def build() -> Path:
   .brand span{{ display:block; font-size:11px; color:var(--muted); margin-top:4px;
                 text-transform:uppercase; letter-spacing:.08em; }}
   .scol a{{ display:block; padding:4px 0; }}
+  .scol a.meto{{ margin-top:16px; padding-top:12px; border-top:1px solid var(--line); }}
   .scol a.on{{ text-decoration:underline; text-underline-offset:3px; }}
   .scontent{{ flex:1; min-width:0; }}
   .entry{{ max-width:820px; padding:clamp(40px,7vw,96px) clamp(22px,6vw,72px); }}
@@ -75,7 +76,7 @@ def build() -> Path:
     <nav class="scol">
       <div class="brand"><b>La sargantana de l'avi</b><span>genoma inferit</span></div>
       <a data-sec="obra" class="on" href="#obra">El genoma</a>
-      <a data-sec="meto" href="#meto">Metodologia</a>
+      <a class="meto" data-sec="meto" href="#meto">Metodologia</a>
     </nav>
     <main class="scontent">
       <section id="obra" class="entry">
@@ -88,7 +89,6 @@ def build() -> Path:
         </div>
       </section>
       <section id="meto" class="entry" hidden>
-        <p class="kicker">La sargantana de l'avi</p>
         <h1 class="title">Metodologia</h1>
         <div class="prose" style="margin-top:clamp(24px,4vw,40px)">{METHOD}</div>
       </section>
