@@ -172,17 +172,13 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
           margin:0; text-wrap:balance; }
   .incipit{ color:var(--muted); font-style:italic; margin:14px 0 0; max-width:60ch; }
 
-  /* original (left) · despoetized (right) */
-  .split{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,4vw,56px);
-          align-items:start; margin:clamp(30px,5vw,52px) 0 0; }
-  @media (max-width:760px){ .split{ grid-template-columns:1fr; } }
+  /* despoetized residue; the original is behind a details toggle */
   .collab{ font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
            margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--hair); }
 
   .poem{ font-size:14px; line-height:1.95; }
   .poem .v{ display:block; }
   .poem .br{ display:block; height:.9em; }
-  .original{ transition:opacity .4s ease; }
   .despo{ color:var(--ink); }
   .orig{ margin-top:clamp(22px,3.5vw,36px); }
   .orig>summary{ cursor:pointer; color:var(--muted); font-size:12px; letter-spacing:.02em;
@@ -192,9 +188,6 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
   .orig[open]>summary::before{ content:"\2013 "; }
   .orig>summary:hover{ color:var(--ink); }
   .orig .original{ margin-top:14px; color:var(--muted); }
-  /* the residue is veiled until the round-trip closes */
-  .despo.veiled{ opacity:0; filter:blur(6px); transform:translateY(6px); }
-  .despo{ transition:opacity .7s ease, filter .7s ease, transform .7s ease; }
 
   /* the despoetization engine */
   .engine{ margin-top:clamp(30px,5vw,52px); border-top:1px solid var(--line); padding-top:20px; }

@@ -220,8 +220,6 @@ _TEMPLATE = r"""<title>Noms de molècules</title>
   .line.on .name{ color:var(--accent); }
   @media (max-width:720px){ .name{ white-space:normal; } }
 
-  .method{ margin-top:clamp(30px,5vw,52px); border-top:1px solid var(--line); padding-top:30px; }
-  .seclab{ font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin:0 0 12px; }
   .prose{ font-size:13px; line-height:1.85; margin:0 0 14px; color:var(--ink); max-width:64ch; }
   .prose b{ font-weight:400; } .prose i{ color:var(--muted); font-style:normal; }
 
