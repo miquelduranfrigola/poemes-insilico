@@ -92,11 +92,11 @@
   .wrap a:hover{ opacity:.55; }
 
   .site{ display:flex; align-items:flex-start; min-height:100vh; }
-  .index{ width:clamp(206px,20vw,250px); flex:none; position:sticky; top:0; align-self:flex-start;
-          height:100vh; overflow:auto; padding:34px 24px; border-right:1px solid var(--line); }
+  .index{ width:220px; flex:none; position:sticky; top:0; align-self:flex-start;
+          height:100vh; overflow:auto; padding:30px 22px; border-right:1px solid var(--line); }
   .brand{ margin-bottom:26px; line-height:1.35; }
-  .brand b{ font-weight:400; font-size:14px; display:block; letter-spacing:-.01em; }
-  .brand span{ color:var(--muted); font-size:11px; }
+  .brand b{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }
+  .brand span{ display:block; color:var(--muted); font-size:11px; margin-top:4px; text-transform:uppercase; letter-spacing:.08em; }
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
   .menu li a{ display:block; padding:3px 0; }
   .menu li a.on{ text-decoration:underline; text-underline-offset:3px; }
@@ -213,3 +213,21 @@
     show((location.hash||'#poem').slice(1) || 'poem');
   })();
 </script>
+<style>.menu a:focus,.menu a:focus-visible,.scol a:focus,.scol a:focus-visible{outline:none;}</style>
+<script>(function(){
+  function ml(){ return [].slice.call(document.querySelectorAll('.menu a[data-target],.scol a[data-sec]')); }
+  document.addEventListener('keydown', function(e){
+    var l = ml(); if(!l.length) return;
+    var i = l.indexOf(document.activeElement);
+    if(e.key==='ArrowDown'||e.key==='j'){ e.preventDefault(); var a=l[i<0?0:(i+1)%l.length]; a.click(); a.focus(); }
+    else if(e.key==='ArrowUp'||e.key==='k'){ e.preventDefault(); var b=l[i<0?l.length-1:(i-1+l.length)%l.length]; b.click(); b.focus(); }
+    else if(e.key==='ArrowLeft'){ e.preventDefault(); try{ parent.postMessage({pis:'toParent'}, '*'); }catch(x){} }
+  });
+  window.addEventListener('message', function(e){
+    if(e.data && e.data.pis==='focusMenu'){
+      var l = ml(), on = l[0];
+      for(var k=0;k<l.length;k++){ if(l[k].classList.contains('on')) on = l[k]; }
+      if(on) on.focus();
+    }
+  });
+})();</script>

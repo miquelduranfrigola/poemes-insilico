@@ -94,11 +94,11 @@
 
   .site{ display:flex; align-items:flex-start; min-height:100vh; }
 
-  .index{ width:clamp(210px,20vw,260px); flex:none; position:sticky; top:0; align-self:flex-start;
-          height:100vh; overflow:auto; padding:34px 24px; border-right:1px solid var(--line); }
+  .index{ width:220px; flex:none; position:sticky; top:0; align-self:flex-start;
+          height:100vh; overflow:auto; padding:30px 22px; border-right:1px solid var(--line); }
   .brand{ margin-bottom:26px; line-height:1.35; }
-  .brand b{ font-weight:400; font-size:14px; display:block; letter-spacing:-.01em; }
-  .brand span{ color:var(--muted); font-size:11px; }
+  .brand b{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }
+  .brand span{ display:block; color:var(--muted); font-size:11px; margin-top:4px; text-transform:uppercase; letter-spacing:.08em; }
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
   .menu li a{ display:block; padding:3px 0; }
   .menu li a.on{ text-decoration:underline; text-underline-offset:3px; }
@@ -125,6 +125,14 @@
   .poem .br{ display:block; height:.9em; }
   .original{ transition:opacity .4s ease; }
   .despo{ color:var(--ink); }
+  .orig{ margin-top:clamp(22px,3.5vw,36px); }
+  .orig>summary{ cursor:pointer; color:var(--muted); font-size:12px; letter-spacing:.02em;
+                 list-style:none; outline:none; }
+  .orig>summary::-webkit-details-marker{ display:none; }
+  .orig>summary::before{ content:"+ "; }
+  .orig[open]>summary::before{ content:"\2013 "; }
+  .orig>summary:hover{ color:var(--ink); }
+  .orig .original{ margin-top:14px; color:var(--muted); }
   /* the residue is veiled until the round-trip closes */
   .despo.veiled{ opacity:0; filter:blur(6px); transform:translateY(6px); }
   .despo{ transition:opacity .7s ease, filter .7s ease, transform .7s ease; }
@@ -201,10 +209,14 @@
       <h2 class="title">Poema 1</h2>
       <p class="incipit">«Cuerpo de mujer, blancas colinas, muslos blancos,»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Cuerpo de mujer, blancas colinas, muslos blancos,</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Pienso cómo manejar estas imágenes. ¡Bienvenido!</span>
+<span class="v">Por desgracia, mi esposa e hijos.</span>
+<span class="v">Me encanta la India.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Cuerpo de mujer, blancas colinas, muslos blancos,</span>
 <span class="v">te pareces al mundo en tu actitud de entrega.</span>
 <span class="v">Mi cuerpo de labriego salvaje te socava</span>
 <span class="v">y hace saltar el hijo del fondo de la tierra.</span>
@@ -223,14 +235,7 @@
 <span class="v">Mi sed, mi ansia sin límite, mi camino indeciso!</span>
 <span class="v">Oscuros cauces donde la sed eterna sigue,</span>
 <span class="v">y la fatiga sigue, y el dolor infinito.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Pienso cómo manejar estas imágenes. ¡Bienvenido!</span>
-<span class="v">Por desgracia, mi esposa e hijos.</span>
-<span class="v">Me encanta la India.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -245,10 +250,14 @@
       <h2 class="title">Poema 2</h2>
       <p class="incipit">«En su llama mortal la luz te envuelve.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">En su llama mortal la luz te envuelve.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Señor, amigo y montañas, cambios negros.</span>
+<span class="v">Azul y otros.</span>
+<span class="v">Políticas de desarrollo económico y, en octubre, el oro.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">En su llama mortal la luz te envuelve.</span>
 <span class="v">Absorta, pálida doliente, así situada</span>
 <span class="v">contra las viejas hélices del crepúsculo</span>
 <span class="v">que en torno a ti da vueltas.</span>
@@ -269,14 +278,7 @@
 <span class="v">del círculo que en negro y dorado sucede:</span>
 <span class="v">erguida, trata y logra una creación tan viva</span>
 <span class="v">que sucumben sus flores, y llena es de tristeza.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Señor, amigo y montañas, cambios negros.</span>
-<span class="v">Azul y otros.</span>
-<span class="v">Políticas de desarrollo económico y, en octubre, el oro.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -291,10 +293,13 @@
       <h2 class="title">Poema 3</h2>
       <p class="incipit">«Ah vastedad de pinos, rumor de olas quebrándose,»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Ah vastedad de pinos, rumor de olas quebrándose,</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Montenegro sigue siendo incorrecto a lo largo de la costa de presión.</span>
+<span class="v">Aunque la boda…</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Ah vastedad de pinos, rumor de olas quebrándose,</span>
 <span class="v">lento juego de luces, campana solitaria,</span>
 <span class="v">crepúsculo cayendo en tus ojos, muñeca,</span>
 <span class="v">caracola terrestre, en ti la tierra canta!</span>
@@ -313,13 +318,7 @@
 <span class="v">en el atardecer resonante y muriendo!</span>
 <span class="v">Así en horas profundas sobre los campos he visto</span>
 <span class="v">doblarse las espigas en la boca del viento.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Montenegro sigue siendo incorrecto a lo largo de la costa de presión.</span>
-<span class="v">Aunque la boda…</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -334,10 +333,12 @@
       <h2 class="title">Poema 4</h2>
       <p class="incipit">«Es la mañana llena de tempestad»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Es la mañana llena de tempestad</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">El proceso de hígado o el posible río Ravi.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Es la mañana llena de tempestad</span>
 <span class="v">en el corazón del verano.</span>
 <span class="br"></span>
 <span class="v">Como pañuelos blancos de adiós viajan las nubes,</span>
@@ -357,12 +358,7 @@
 <span class="br"></span>
 <span class="v">Se rompe y se sumerge su volumen de besos</span>
 <span class="v">combatido en la puerta del viento del verano.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">El proceso de hígado o el posible río Ravi.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -377,10 +373,13 @@
       <h2 class="title">Poema 5</h2>
       <p class="incipit">«Para que tú me oigas»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Para que tú me oigas</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">La ventilación de la pared de climatización, oí nada más que los precios del vino.</span>
+<span class="v">No antes, Maliyili trató de detenerme, pero no lo hice.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Para que tú me oigas</span>
 <span class="v">mis palabras</span>
 <span class="v">se adelgazan a veces</span>
 <span class="v">como las huellas de las gaviotas en las playas.</span>
@@ -417,13 +416,7 @@
 <span class="br"></span>
 <span class="v">Voy haciendo de todas un collar infinito</span>
 <span class="v">para tus blancas manos, suaves como las uvas.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">La ventilación de la pared de climatización, oí nada más que los precios del vino.</span>
-<span class="v">No antes, Maliyili trató de detenerme, pero no lo hice.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -438,10 +431,14 @@
       <h2 class="title">Poema 6</h2>
       <p class="incipit">«Te recuerdo como eras en el último otoño.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Te recuerdo como eras en el último otoño.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Apoyar el medio ambiente y el resultado y el Banco Mundial.</span>
+<span class="v">El daño a los antecedentes históricos: limpio, ordenado y pájaros cambió.</span>
+<span class="v">Se encuentra ahora la luz amarilla y caída.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Te recuerdo como eras en el último otoño.</span>
 <span class="v">Eras la boina gris y el corazón en calma.</span>
 <span class="v">En tus ojos peleaban las llamas del crepúsculo.</span>
 <span class="v">Y las hojas caían en el agua de tu alma.</span>
@@ -460,14 +457,7 @@
 <span class="v">Tu recuerdo es de luz, de humo, de estanque en calma!</span>
 <span class="v">Más allá de tus ojos ardían los crepúsculos.</span>
 <span class="v">Hojas secas de otoño giraban en tu alma.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Apoyar el medio ambiente y el resultado y el Banco Mundial.</span>
-<span class="v">El daño a los antecedentes históricos: limpio, ordenado y pájaros cambió.</span>
-<span class="v">Se encuentra ahora la luz amarilla y caída.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -482,10 +472,14 @@
       <h2 class="title">Poema 7</h2>
       <p class="incipit">«Inclinado en las tardes tiro mis tristes redes»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Inclinado en las tardes tiro mis tristes redes</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Arena, amarilla, hermosa.</span>
+<span class="v">O roja, y los investigadores</span>
+<span class="v">quieren ver la destrucción de las paredes en blanco y negro.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Inclinado en las tardes tiro mis tristes redes</span>
 <span class="v">a tus ojos oceánicos.</span>
 <span class="br"></span>
 <span class="v">Allí se estira y arde en la más alta hoguera</span>
@@ -505,14 +499,7 @@
 <span class="br"></span>
 <span class="v">Galopa la noche en su yegua sombría</span>
 <span class="v">desparramando espigas azules sobre el campo.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Arena, amarilla, hermosa.</span>
-<span class="v">O roja, y los investigadores</span>
-<span class="v">quieren ver la destrucción de las paredes en blanco y negro.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -527,10 +514,14 @@
       <h2 class="title">Poema 8</h2>
       <p class="incipit">«Abeja blanca zumbas -ebria de miel- en mi alma»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Abeja blanca zumbas -ebria de miel- en mi alma</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Explosión, condiciones, corrección de pruebas. ¡La gente!</span>
+<span class="v">Qatar, ¡el agua es mala!</span>
+<span class="v">Mientras tanto, cinco etíopes para que me ayuden, pero lo harán. ¡De verdad!</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Abeja blanca zumbas -ebria de miel- en mi alma</span>
 <span class="v">y te tuerces en lentas espirales de humo.</span>
 <span class="br"></span>
 <span class="v">Soy el desesperado, la palabra sin ecos,</span>
@@ -562,14 +553,7 @@
 <span class="v">Revives en el tiempo, delgada y silenciosa.</span>
 <span class="br"></span>
 <span class="v">Ah silenciosa!</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Explosión, condiciones, corrección de pruebas. ¡La gente!</span>
-<span class="v">Qatar, ¡el agua es mala!</span>
-<span class="v">Mientras tanto, cinco etíopes para que me ayuden, pero lo harán. ¡De verdad!</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -584,10 +568,16 @@
       <h2 class="title">Poema 9</h2>
       <p class="incipit">«Ebrio de trementina y largos besos,»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Ebrio de trementina y largos besos,</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Chipre y el Reino Unido y el Mar Muerto.</span>
+<span class="v">La esperanza, el primer resultado de la composición.</span>
+<span class="v">Esta enfermedad (amor, amor y respeto)</span>
+<span class="v">juega un papel importante en la física de las noches.</span>
+<span class="v">Pero era, pero es demasiado mala.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Ebrio de trementina y largos besos,</span>
 <span class="v">estival, el velero de las rosas dirijo,</span>
 <span class="v">torcido hacia la muerte del delgado día,</span>
 <span class="v">cimentado en el sólido frenesí marino.</span>
@@ -611,16 +601,7 @@
 <span class="v">tu paralelo cuerpo se sujeta en mis brazos</span>
 <span class="v">como un pez infinitamente pegado a mi alma</span>
 <span class="v">rápido y lento en la energía subceleste.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Chipre y el Reino Unido y el Mar Muerto.</span>
-<span class="v">La esperanza, el primer resultado de la composición.</span>
-<span class="v">Esta enfermedad (amor, amor y respeto)</span>
-<span class="v">juega un papel importante en la física de las noches.</span>
-<span class="v">Pero era, pero es demasiado mala.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -635,10 +616,13 @@
       <h2 class="title">Poema 10</h2>
       <p class="incipit">«Hemos perdido aun este crepúsculo.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Hemos perdido aun este crepúsculo.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Cuatro autobuses Midnight Blue Mountains.</span>
+<span class="v">Hook murió, sin embargo.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Hemos perdido aun este crepúsculo.</span>
 <span class="v">Nadie nos vio esta tarde con las manos unidas</span>
 <span class="v">mientras la noche azul caía sobre el mundo.</span>
 <span class="br"></span>
@@ -662,13 +646,7 @@
 <span class="br"></span>
 <span class="v">Siempre, siempre te alejas en las tardes</span>
 <span class="v">hacia donde el crepúsculo corre borrando estatuas.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Cuatro autobuses Midnight Blue Mountains.</span>
-<span class="v">Hook murió, sin embargo.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -683,10 +661,16 @@
       <h2 class="title">Poema 11</h2>
       <p class="incipit">«Casi fuera del cielo ancla entre dos montañas»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Casi fuera del cielo ancla entre dos montañas</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Disney, cumbre mundial de la guitarra,</span>
+<span class="v">mundo de la climatización y ventilación cero y la nieve.</span>
+<span class="v">De manera diferente, en la familia, Jiuao quiere escuchar la canción.</span>
+<span class="v">Las condiciones climáticas, como el verde y el blanco.</span>
+<span class="v">De hielo, del cáncer a la revelación.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Casi fuera del cielo ancla entre dos montañas</span>
 <span class="v">la mitad de la luna.</span>
 <span class="v">Girante, errante noche, la cavadora de ojos.</span>
 <span class="v">A ver cuántas estrellas trizadas en la charca.</span>
@@ -712,16 +696,7 @@
 <span class="v">Ay seguir el camino que se aleja de todo,</span>
 <span class="v">donde no esté atajando la angustia, la muerte, el invierno,</span>
 <span class="v">con sus ojos abiertos entre el rocío.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Disney, cumbre mundial de la guitarra,</span>
-<span class="v">mundo de la climatización y ventilación cero y la nieve.</span>
-<span class="v">De manera diferente, en la familia, Jiuao quiere escuchar la canción.</span>
-<span class="v">Las condiciones climáticas, como el verde y el blanco.</span>
-<span class="v">De hielo, del cáncer a la revelación.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -736,10 +711,12 @@
       <h2 class="title">Poema 12</h2>
       <p class="incipit">«Para mi corazón basta tu pecho,»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Para mi corazón basta tu pecho,</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Creo que va a ser esta vez: comunidad.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Para mi corazón basta tu pecho,</span>
 <span class="v">para tu libertad bastan mis alas.</span>
 <span class="v">Desde mi boca llegará hasta el cielo</span>
 <span class="v">lo que estaba dormido sobre tu alma.</span>
@@ -758,12 +735,7 @@
 <span class="v">Te pueblan ecos y voces nostálgicas.</span>
 <span class="v">Yo desperté y a veces emigran y huyen</span>
 <span class="v">pájaros que dormían en tu alma.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Creo que va a ser esta vez: comunidad.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -778,10 +750,14 @@
       <h2 class="title">Poema 13</h2>
       <p class="incipit">«He ido marcando con cruces de fuego»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">He ido marcando con cruces de fuego</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">La esperanza, la luz, la música, casi todas las tormentas.</span>
+<span class="v">La palabra significa</span>
+<span class="v">para ocultar la evidencia de salud.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">He ido marcando con cruces de fuego</span>
 <span class="v">el atlas blanco de tu cuerpo.</span>
 <span class="v">Mi boca era una araña que cruzaba escondiéndose.</span>
 <span class="v">En ti, detrás de ti, temerosa, sedienta.</span>
@@ -807,14 +783,7 @@
 <span class="v">Triste ternura mía, qué te haces de repente?</span>
 <span class="v">Cuando he llegado al vértice más atrevido y frío</span>
 <span class="v">mi corazón se cierra como una flor nocturna.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">La esperanza, la luz, la música, casi todas las tormentas.</span>
-<span class="v">La palabra significa</span>
-<span class="v">para ocultar la evidencia de salud.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -829,10 +798,16 @@
       <h2 class="title">Poema 14</h2>
       <p class="incipit">«Juegas todos los días con la luz del universo.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Juegas todos los días con la luz del universo.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">No hay problema, usted ha estado en el programa,</span>
+<span class="v">se pueden añadir unas gotas de aceite esencial.</span>
+<span class="v">Había un hombre en mi corazón.</span>
+<span class="v">Ira, enojo, y el trabajo.</span>
+<span class="v">Pero ponen las flores en primavera, y el verano es fácil de limpiar.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Juegas todos los días con la luz del universo.</span>
 <span class="v">Sutil visitadora, llegas en la flor y en el agua.</span>
 <span class="v">Eres más que esta blanca cabecita que aprieto</span>
 <span class="v">como un racimo entre mis manos cada día.</span>
@@ -876,16 +851,7 @@
 <span class="br"></span>
 <span class="v">Quiero hacer contigo</span>
 <span class="v">lo que la primavera hace con los cerezos.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">No hay problema, usted ha estado en el programa,</span>
-<span class="v">se pueden añadir unas gotas de aceite esencial.</span>
-<span class="v">Había un hombre en mi corazón.</span>
-<span class="v">Ira, enojo, y el trabajo.</span>
-<span class="v">Pero ponen las flores en primavera, y el verano es fácil de limpiar.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -900,10 +866,15 @@
       <h2 class="title">Poema 15</h2>
       <p class="incipit">«Me gustas cuando callas porque estás como ausente,»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Me gustas cuando callas porque estás como ausente,</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">La estación en Malasia,</span>
+<span class="v">sabor de la sangre y plumas.</span>
+<span class="v">Buena pregunta, corrupto.</span>
+<span class="v">Vi el cuerpo de su esposa.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Me gustas cuando callas porque estás como ausente,</span>
 <span class="v">y me oyes desde lejos, y mi voz no te toca.</span>
 <span class="v">Parece que los ojos se te hubieran volado</span>
 <span class="v">y parece que un beso te cerrara la boca.</span>
@@ -927,15 +898,7 @@
 <span class="v">Distante y dolorosa como si hubieras muerto.</span>
 <span class="v">Una palabra entonces, una sonrisa bastan.</span>
 <span class="v">Y estoy alegre, alegre de que no sea cierto.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">La estación en Malasia,</span>
-<span class="v">sabor de la sangre y plumas.</span>
-<span class="v">Buena pregunta, corrupto.</span>
-<span class="v">Vi el cuerpo de su esposa.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -950,10 +913,13 @@
       <h2 class="title">Poema 16</h2>
       <p class="incipit">«En mi cielo al crepúsculo eres como una nube»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">En mi cielo al crepúsculo eres como una nube</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">De hecho, el sueño por la noche es mejor que el vino.</span>
+<span class="v">Licencia en lugar de alcohol para matarla.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">En mi cielo al crepúsculo eres como una nube</span>
 <span class="v">y tu color y forma son como yo los quiero.</span>
 <span class="v">Eres mía, eres mía, mujer de labios dulces,</span>
 <span class="v">y viven en tu vida mis infinitos sueños.</span>
@@ -972,13 +938,7 @@
 <span class="v">y mis redes de música son anchas como el cielo.</span>
 <span class="v">Mi alma nace a la orilla de tus ojos de luto.</span>
 <span class="v">En tus ojos de luto comienza el país del sueño.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">De hecho, el sueño por la noche es mejor que el vino.</span>
-<span class="v">Licencia en lugar de alcohol para matarla.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -993,10 +953,18 @@
       <h2 class="title">Poema 17</h2>
       <p class="incipit">«Pensando, enredando sombras en la profunda soledad.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Pensando, enredando sombras en la profunda soledad.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">La buena noticia es que esto no tiene sentido.</span>
+<span class="v">Esto puede ser un nuevo comienzo.</span>
+<span class="v">Baterías de playas, el tenis, la lectura y Blue Cross Fire Company.</span>
+<span class="v">Y el calor.</span>
+<span class="v">Amo la química: siete o nueve equipos, el agua puede ser entregada,</span>
+<span class="v">es un problema en la primera ronda de Roland Garros.</span>
+<span class="v">Todos ellos tienen una historia de la vida eterna. Pero ¿por qué?</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Pensando, enredando sombras en la profunda soledad.</span>
 <span class="v">Tú también estás lejos, ah más lejos que nadie.</span>
 <span class="v">Pensando, soltando pájaros, desvaneciendo imágenes,</span>
 <span class="v">enterrando lámparas.</span>
@@ -1031,18 +999,7 @@
 <span class="br"></span>
 <span class="v">Pensando, enterrando lámparas en la profunda soledad.</span>
 <span class="v">Quién eres tú, quién eres?</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">La buena noticia es que esto no tiene sentido.</span>
-<span class="v">Esto puede ser un nuevo comienzo.</span>
-<span class="v">Baterías de playas, el tenis, la lectura y Blue Cross Fire Company.</span>
-<span class="v">Y el calor.</span>
-<span class="v">Amo la química: siete o nueve equipos, el agua puede ser entregada,</span>
-<span class="v">es un problema en la primera ronda de Roland Garros.</span>
-<span class="v">Todos ellos tienen una historia de la vida eterna. Pero ¿por qué?</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -1057,10 +1014,15 @@
       <h2 class="title">Poema 18</h2>
       <p class="incipit">«Aquí te amo.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Aquí te amo.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Mao —él dijo a los invitados.</span>
+<span class="v">Árabe podrido, en junio,</span>
+<span class="v">con una mano para el dinero.</span>
+<span class="v">En muchos casos dijo Jiuao.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Aquí te amo.</span>
 <span class="v">En los oscuros pinos se desenreda el viento.</span>
 <span class="v">Fosforece la luna sobre las aguas errantes.</span>
 <span class="v">Andan días iguales persiguiéndose.</span>
@@ -1092,15 +1054,7 @@
 <span class="br"></span>
 <span class="v">Me miran con tus ojos las estrellas más grandes.</span>
 <span class="v">Y como yo te amo, los pinos en el viento, quieren cantar tu nombre con sus hojas de alambre.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Mao —él dijo a los invitados.</span>
-<span class="v">Árabe podrido, en junio,</span>
-<span class="v">con una mano para el dinero.</span>
-<span class="v">En muchos casos dijo Jiuao.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -1115,10 +1069,15 @@
       <h2 class="title">Poema 19</h2>
       <p class="incipit">«Niña morena y ágil, el sol que hace las frutas,»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Niña morena y ágil, el sol que hace las frutas,</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">Verde y oro, pero no quiero nada.</span>
+<span class="v">Canales en inglés y miel,</span>
+<span class="v">agua y aire incómodo.</span>
+<span class="v">Sol, la Luna y Luxemburgo.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Niña morena y ágil, el sol que hace las frutas,</span>
 <span class="v">el que cuaja los trigos, el que tuerce las algas,</span>
 <span class="v">hizo tu cuerpo alegre, tus luminosos ojos</span>
 <span class="v">y tu boca que tiene la sonrisa del agua.</span>
@@ -1137,15 +1096,7 @@
 <span class="v">y amo tu cuerpo alegre, tu voz suelta y delgada.</span>
 <span class="v">Mariposa morena dulce y definitiva</span>
 <span class="v">como el trigal y el sol, la amapola y el agua.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">Verde y oro, pero no quiero nada.</span>
-<span class="v">Canales en inglés y miel,</span>
-<span class="v">agua y aire incómodo.</span>
-<span class="v">Sol, la Luna y Luxemburgo.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -1160,10 +1111,15 @@
       <h2 class="title">Poema 20</h2>
       <p class="incipit">«Puedo escribir los versos más tristes esta noche.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Puedo escribir los versos más tristes esta noche.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">No lo haré. Pero la tarjeta del padre…</span>
+<span class="v">Copa en invierno, por lo menos tres porciones,</span>
+<span class="v">cuestiones relacionadas con el SIDA.</span>
+<span class="v">El tiempo… y el crédito a las mujeres.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Puedo escribir los versos más tristes esta noche.</span>
 <span class="br"></span>
 <span class="v">Escribir, por ejemplo: «La noche está estrellada,</span>
 <span class="v">y tiritan, azules, los astros, a lo lejos.»</span>
@@ -1211,15 +1167,7 @@
 <span class="br"></span>
 <span class="v">Aunque éste sea el último dolor que ella me causa,</span>
 <span class="v">y éstos sean los últimos versos que yo le escribo.</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">No lo haré. Pero la tarjeta del padre…</span>
-<span class="v">Copa en invierno, por lo menos tres porciones,</span>
-<span class="v">cuestiones relacionadas con el SIDA.</span>
-<span class="v">El tiempo… y el crédito a las mujeres.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -1234,10 +1182,24 @@
       <h2 class="title">La canción desesperada</h2>
       <p class="incipit">«Emerge tu recuerdo de la noche en que estoy.»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original"><span class="v">Emerge tu recuerdo de la noche en que estoy.</span>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo"><span class="v">¡Algunas abejas!</span>
+<span class="v">Muchas personas en este país,</span>
+<span class="v">el estado de derecho y el acero y otras aves de interés.</span>
+<span class="v">La música, el entretenimiento, las noticias.</span>
+<span class="v">Disfrutar del vídeo de Moscú,</span>
+<span class="v">no puedo darle tecnología a las elecciones.</span>
+<span class="v">Dientes, pies, cabeza, abdomen.</span>
+<span class="v">Y religiosas ceremonias.</span>
+<span class="v">En cambio, para la electricidad, el agua y la harina.</span>
+<span class="v">Dios, no sé, pero yo exprimo el éxito del tratamiento.</span>
+<span class="v">Hay otras opciones por Pascua.</span>
+<span class="v">Problemas griegos o de temporada.</span>
+<span class="v">Yo tenía miedo.</span></div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original"><span class="v">Emerge tu recuerdo de la noche en que estoy.</span>
 <span class="v">El río anuda al mar su lamento obstinado.</span>
 <span class="br"></span>
 <span class="v">Abandonado como los muelles en el alba.</span>
@@ -1324,24 +1286,7 @@
 <span class="v">Ah más allá de todo. Ah más allá de todo.</span>
 <span class="br"></span>
 <span class="v">Es la hora de partir. Oh abandonado!</span></div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled"><span class="v">¡Algunas abejas!</span>
-<span class="v">Muchas personas en este país,</span>
-<span class="v">el estado de derecho y el acero y otras aves de interés.</span>
-<span class="v">La música, el entretenimiento, las noticias.</span>
-<span class="v">Disfrutar del vídeo de Moscú,</span>
-<span class="v">no puedo darle tecnología a las elecciones.</span>
-<span class="v">Dientes, pies, cabeza, abdomen.</span>
-<span class="v">Y religiosas ceremonias.</span>
-<span class="v">En cambio, para la electricidad, el agua y la harina.</span>
-<span class="v">Dios, no sé, pero yo exprimo el éxito del tratamiento.</span>
-<span class="v">Hay otras opciones por Pascua.</span>
-<span class="v">Problemas griegos o de temporada.</span>
-<span class="v">Yo tenía miedo.</span></div>
-        </div>
-      </div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -1395,8 +1340,6 @@
       var readout = el.querySelector('.readout');
       var counter = el.querySelector('.counter');
       var track = el.querySelector('.track');
-      var original = el.querySelector('.original');
-      var despo = el.querySelector('.despo');
       var steps = CHAIN.length - 1;       // 104
 
       // Build the track once.
@@ -1409,24 +1352,16 @@
       active = state;
 
       function reset(){
-        if(despo){ despo.classList.add('veiled'); }
-        if(original){ original.style.opacity = '1'; }
         bars.forEach(function(b){ b.className=''; });
         if(readout){ readout.innerHTML = '[es] Spanish'; }
         if(counter){ counter.textContent = '0 / ' + steps; }
       }
 
-      if(reduce){                          // no sweep: just show the residue
-        reset();
-        if(despo) despo.classList.remove('veiled');
-        if(original) original.style.opacity = '0.55';
-        return;
-      }
+      if(reduce){ reset(); return; }       // the residue is always shown; ticker is ambiance
 
       function sweep(i){
         if(active !== state) return;
-        if(i >= steps){                    // round-trip closed
-          if(despo) despo.classList.remove('veiled');
+        if(i >= steps){                    // round-trip closed -> pause, then loop
           if(readout) readout.innerHTML = '[es] Spanish · <b>fet</b>';
           if(counter) counter.textContent = steps + ' / ' + steps;
           state.timer = setTimeout(function(){ i = 0; cycle(); }, 3800);
@@ -1437,7 +1372,6 @@
         if(bars[i]) bars[i].className = 'now';
         if(readout) readout.innerHTML = '[' + tgt[0] + '] ' + tgt[1];
         if(counter) counter.textContent = (i+1) + ' / ' + steps;
-        if(original) original.style.opacity = (1 - 0.5 * (i+1)/steps).toFixed(3);
         state.timer = setTimeout(function(){ sweep(i+1); }, 46);
       }
       function cycle(){ reset(); state.timer = setTimeout(function(){ sweep(0); }, 700); }
@@ -1467,3 +1401,21 @@
     show(location.hash ? location.hash.slice(1) : DEFAULT_ID);
   })();
 </script>
+<style>.menu a:focus,.menu a:focus-visible,.scol a:focus,.scol a:focus-visible{outline:none;}</style>
+<script>(function(){
+  function ml(){ return [].slice.call(document.querySelectorAll('.menu a[data-target],.scol a[data-sec]')); }
+  document.addEventListener('keydown', function(e){
+    var l = ml(); if(!l.length) return;
+    var i = l.indexOf(document.activeElement);
+    if(e.key==='ArrowDown'||e.key==='j'){ e.preventDefault(); var a=l[i<0?0:(i+1)%l.length]; a.click(); a.focus(); }
+    else if(e.key==='ArrowUp'||e.key==='k'){ e.preventDefault(); var b=l[i<0?l.length-1:(i-1+l.length)%l.length]; b.click(); b.focus(); }
+    else if(e.key==='ArrowLeft'){ e.preventDefault(); try{ parent.postMessage({pis:'toParent'}, '*'); }catch(x){} }
+  });
+  window.addEventListener('message', function(e){
+    if(e.data && e.data.pis==='focusMenu'){
+      var l = ml(), on = l[0];
+      for(var k=0;k<l.length;k++){ if(l[k].classList.contains('on')) on = l[k]; }
+      if(on) on.focus();
+    }
+  });
+})();</script>

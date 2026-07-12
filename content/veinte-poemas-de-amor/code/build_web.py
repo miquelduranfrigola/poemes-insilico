@@ -59,16 +59,13 @@ def _entry(m: dict, default: bool) -> str:
       <h2 class="title">{html.escape(title)}</h2>
       <p class="incipit">«{html.escape(incipit)}»</p>
 
-      <div class="split">
-        <div class="col">
-          <p class="collab">Original</p>
-          <div class="poem original">{original}</div>
-        </div>
-        <div class="col">
-          <p class="collab">Despoetitzat · 104 llengües</p>
-          <div class="poem despo veiled">{despo}</div>
-        </div>
-      </div>
+      <p class="collab">Despoetitzat · 104 llengües</p>
+      <div class="poem despo">{despo}</div>
+
+      <details class="orig">
+        <summary>Original de Neruda</summary>
+        <div class="poem original">{original}</div>
+      </details>
 
       <div class="engine">
         <div class="engbar">
@@ -132,7 +129,8 @@ def build() -> Path:
             .replace("{{ENTRIES}}", entries)
             .replace("{{CHAIN}}", chain_json))
     out = POEM_ROOT / "results" / "index.html"
-    out.write_text(page, encoding="utf-8")
+    nav = (HERE.parents[2] / "shared" / "vendor" / "menu-nav.html").read_text(encoding="utf-8")
+    out.write_text(page + nav, encoding="utf-8")
     return out
 
 
@@ -156,11 +154,11 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
 
   .site{ display:flex; align-items:flex-start; min-height:100vh; }
 
-  .index{ width:clamp(210px,20vw,260px); flex:none; position:sticky; top:0; align-self:flex-start;
-          height:100vh; overflow:auto; padding:34px 24px; border-right:1px solid var(--line); }
+  .index{ width:220px; flex:none; position:sticky; top:0; align-self:flex-start;
+          height:100vh; overflow:auto; padding:30px 22px; border-right:1px solid var(--line); }
   .brand{ margin-bottom:26px; line-height:1.35; }
-  .brand b{ font-weight:400; font-size:14px; display:block; letter-spacing:-.01em; }
-  .brand span{ color:var(--muted); font-size:11px; }
+  .brand b{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }
+  .brand span{ display:block; color:var(--muted); font-size:11px; margin-top:4px; text-transform:uppercase; letter-spacing:.08em; }
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
   .menu li a{ display:block; padding:3px 0; }
   .menu li a.on{ text-decoration:underline; text-underline-offset:3px; }
@@ -187,6 +185,14 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
   .poem .br{ display:block; height:.9em; }
   .original{ transition:opacity .4s ease; }
   .despo{ color:var(--ink); }
+  .orig{ margin-top:clamp(22px,3.5vw,36px); }
+  .orig>summary{ cursor:pointer; color:var(--muted); font-size:12px; letter-spacing:.02em;
+                 list-style:none; outline:none; }
+  .orig>summary::-webkit-details-marker{ display:none; }
+  .orig>summary::before{ content:"+ "; }
+  .orig[open]>summary::before{ content:"\2013 "; }
+  .orig>summary:hover{ color:var(--ink); }
+  .orig .original{ margin-top:14px; color:var(--muted); }
   /* the residue is veiled until the round-trip closes */
   .despo.veiled{ opacity:0; filter:blur(6px); transform:translateY(6px); }
   .despo{ transition:opacity .7s ease, filter .7s ease, transform .7s ease; }
@@ -259,8 +265,6 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
       var readout = el.querySelector('.readout');
       var counter = el.querySelector('.counter');
       var track = el.querySelector('.track');
-      var original = el.querySelector('.original');
-      var despo = el.querySelector('.despo');
       var steps = CHAIN.length - 1;       // 104
 
       // Build the track once.
@@ -273,24 +277,16 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
       active = state;
 
       function reset(){
-        if(despo){ despo.classList.add('veiled'); }
-        if(original){ original.style.opacity = '1'; }
         bars.forEach(function(b){ b.className=''; });
         if(readout){ readout.innerHTML = '[es] Spanish'; }
         if(counter){ counter.textContent = '0 / ' + steps; }
       }
 
-      if(reduce){                          // no sweep: just show the residue
-        reset();
-        if(despo) despo.classList.remove('veiled');
-        if(original) original.style.opacity = '0.55';
-        return;
-      }
+      if(reduce){ reset(); return; }       // the residue is always shown; ticker is ambiance
 
       function sweep(i){
         if(active !== state) return;
-        if(i >= steps){                    // round-trip closed
-          if(despo) despo.classList.remove('veiled');
+        if(i >= steps){                    // round-trip closed -> pause, then loop
           if(readout) readout.innerHTML = '[es] Spanish · <b>fet</b>';
           if(counter) counter.textContent = steps + ' / ' + steps;
           state.timer = setTimeout(function(){ i = 0; cycle(); }, 3800);
@@ -301,7 +297,6 @@ _TEMPLATE = r"""<title>Veinte poemas de amor</title>
         if(bars[i]) bars[i].className = 'now';
         if(readout) readout.innerHTML = '[' + tgt[0] + '] ' + tgt[1];
         if(counter) counter.textContent = (i+1) + ' / ' + steps;
-        if(original) original.style.opacity = (1 - 0.5 * (i+1)/steps).toFixed(3);
         state.timer = setTimeout(function(){ sweep(i+1); }, 46);
       }
       function cycle(){ reset(); state.timer = setTimeout(function(){ sweep(0); }, 700); }

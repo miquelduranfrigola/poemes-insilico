@@ -154,7 +154,8 @@ def build():
     font_css = open(FONT_CSS, encoding="utf-8").read()
     page = _TEMPLATE.replace("{{FONT}}", font_css).replace("{{STANZAS}}", "".join(stanzas))
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    open(OUT, "w", encoding="utf-8").write(page)
+    nav = open(os.path.join(REPO, "shared", "vendor", "menu-nav.html"), encoding="utf-8").read()
+    open(OUT, "w", encoding="utf-8").write(page + nav)
     return OUT
 
 
@@ -173,7 +174,19 @@ _TEMPLATE = r"""<title>Noms de molècules</title>
   body{ color:var(--ink); font-family:var(--mono); font-size:14px; line-height:1.65;
         -webkit-font-smoothing:antialiased; }
 
-  .page{ max-width:900px; margin:0 auto; padding:clamp(48px,9vw,110px) clamp(24px,6vw,64px); }
+  a{ color:var(--ink); text-decoration:none; } a:hover{ opacity:.55; }
+  .site{ display:flex; align-items:flex-start; min-height:100vh; }
+  .index{ width:220px; flex:none; position:sticky; top:0; height:100vh; overflow:auto;
+          padding:30px 22px; border-right:1px solid var(--line); }
+  .brand b{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }
+  .brand span{ display:block; font-size:11px; color:var(--muted); margin-top:4px; text-transform:uppercase; letter-spacing:.08em; }
+  .menu{ list-style:none; margin:22px 0 0; padding:0; } .menu li{ margin:0 0 2px; }
+  .menu a{ display:block; padding:4px 0; } .menu a.on{ text-decoration:underline; text-underline-offset:3px; }
+  .menu .foot{ margin-top:20px; } .menu .foot a{ color:var(--muted); font-size:11px; }
+  .view{ flex:1; min-width:0; }
+  .entry{ max-width:900px; padding:clamp(44px,8vw,96px) clamp(24px,6vw,64px); }
+  .entry[hidden]{ display:none; }
+  .title{ font-weight:400; font-size:clamp(24px,3.4vw,32px); letter-spacing:-.02em; margin:0; line-height:1.1; }
 
   .mast{ margin:0 0 clamp(44px,8vw,88px); }
   .mast h1{ font-weight:400; font-size:clamp(26px,4vw,40px); letter-spacing:-.02em; margin:0;
@@ -214,31 +227,60 @@ _TEMPLATE = r"""<title>Noms de molècules</title>
   @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } .slide{ transition:none; } }
 </style>
 
-<div class="page">
-  <header class="mast">
-    <h1>Noms de molècules</h1>
-    <p>Una vida en vuit edats, dita amb noms de molècules. Cada vers, un hexasíl·lab;
-      cada estrofa, la seva rima. El plafó va passant les molècules de cada edat.</p>
-  </header>
+<div class="wrap"><div class="site">
+  <nav class="index">
+    <div class="brand"><a data-target="poema" href="#poema"><b>Noms de molècules</b></a>
+      <span>una vida en molècules</span></div>
+    <ol class="menu">
+      <li><a data-target="poema" href="#poema" class="on">El poema</a></li>
+      <li><a data-target="metode" href="#metode">Metodologia</a></li>
+      <li class="foot"><a href="../index.html" target="_top">‹ Tots els poemes</a></li>
+    </ol>
+  </nav>
 
-  {{STANZAS}}
+  <main class="view">
+    <section class="entry" id="poema">
+      <header class="mast">
+        <h1 class="title">Noms de molècules</h1>
+        <p>Una vida en vuit edats, dita amb noms de molècules. Cada vers, un hexasíl·lab;
+          cada estrofa, la seva rima. El plafó va passant les molècules de cada edat.</p>
+      </header>
+      {{STANZAS}}
+    </section>
 
-  <section class="method">
-    <p class="seclab">Nota</p>
-    <p class="prose">Cada vers és el nom d'una molècula real, en català, i un
-      <b>hexasíl·lab</b> (sis síl·labes fins a l'última tònica). Cada estrofa —del fetus
-      a la mort— <b>rima</b> amb un sufix diferent. A la mort l'hexasíl·lab es trenca a
-      posta: el vers es torna pedra, mineral, curt.</p>
-    <p class="prose">Estructures dibuixades amb RDKit; els minerals surten esquemàtics.
-      Recompte de síl·labes amb el motor de Softcatalà. <i>Poemes computacionals.</i></p>
-  </section>
-</div>
+    <section class="entry" id="metode" hidden>
+      <h1 class="title">Metodologia</h1>
+      <div style="margin-top:clamp(24px,4vw,40px)">
+        <p class="prose">Cada vers és el nom d'una molècula real, en català, i un
+          <b>hexasíl·lab</b> (sis síl·labes fins a l'última tònica). Cada estrofa —del fetus
+          a la mort— <b>rima</b> amb un sufix diferent. A la mort l'hexasíl·lab es trenca a
+          posta: el vers es torna pedra, mineral, curt.</p>
+        <p class="prose">Estructures dibuixades amb RDKit; els minerals surten esquemàtics.
+          Recompte de síl·labes amb el motor de Softcatalà.</p>
+      </div>
+    </section>
+  </main>
+</div></div>
 
 <script>
   (function(){
+    var links = [].slice.call(document.querySelectorAll('[data-target]'));
+    var secs = [].slice.call(document.querySelectorAll('.entry[id]'));
+    function show(id){
+      if(!document.getElementById(id)) id = 'poema';
+      secs.forEach(function(s){ s.hidden = s.id !== id; });
+      links.forEach(function(a){ a.classList.toggle('on', a.dataset.target === id); });
+      window.scrollTo(0, 0);
+    }
+    links.forEach(function(a){
+      if(!a.dataset.target) return;
+      a.addEventListener('click', function(e){ e.preventDefault();
+        history.replaceState(null, '', '#' + a.dataset.target); show(a.dataset.target); });
+    });
+    show(location.hash.slice(1) || 'poema');
+
     var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var stanzas = [].slice.call(document.querySelectorAll('.stanza'));
-    stanzas.forEach(function(st, si){
+    [].slice.call(document.querySelectorAll('.stanza')).forEach(function(st, si){
       var slides = [].slice.call(st.querySelectorAll('.slide'));
       var lines = [].slice.call(st.querySelectorAll('.line'));
       if(!slides.length) return;
@@ -248,12 +290,8 @@ _TEMPLATE = r"""<title>Noms de molècules</title>
         lines.forEach(function(l, j){ l.classList.toggle('on', j === k); });
       }
       paint();
-      if(!reduce){
-        // stagger stanzas so they don't all flip in unison
-        setTimeout(function(){
-          setInterval(function(){ k = (k + 1) % slides.length; paint(); }, 2600);
-        }, si * 650);
-      }
+      if(!reduce){ setTimeout(function(){
+        setInterval(function(){ k = (k + 1) % slides.length; paint(); }, 2600); }, si * 650); }
     });
   })();
 </script>

@@ -179,7 +179,8 @@ def build() -> Path:
             .replace("{{LIB}}", lib_js)
             .replace("{{DATA}}", json.dumps(data_out, ensure_ascii=False)))
     out = POEM_ROOT / "results" / "index.html"
-    out.write_text(page, encoding="utf-8")
+    nav = (POEM_ROOT.parent.parent / "shared" / "vendor" / "menu-nav.html").read_text(encoding="utf-8")
+    out.write_text(page + nav, encoding="utf-8")
     return out
 
 
@@ -203,11 +204,11 @@ _TEMPLATE = r"""<title>Poemes proteics</title>
 
   .site{ display:flex; align-items:flex-start; min-height:100vh; }
 
-  .index{ width:clamp(206px,20vw,250px); flex:none; position:sticky; top:0; align-self:flex-start;
-          height:100vh; overflow:auto; padding:34px 24px; border-right:1px solid var(--line); }
+  .index{ width:220px; flex:none; position:sticky; top:0; align-self:flex-start;
+          height:100vh; overflow:auto; padding:30px 22px; border-right:1px solid var(--line); }
   .brand{ margin-bottom:26px; line-height:1.35; }
-  .brand b{ font-weight:400; font-size:14px; display:block; letter-spacing:-.01em; }
-  .brand span{ color:var(--muted); font-size:11px; }
+  .brand b{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }
+  .brand span{ display:block; color:var(--muted); font-size:11px; margin-top:4px; text-transform:uppercase; letter-spacing:.08em; }
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
   .menu li a{ display:block; padding:3px 0; }
   .menu li a.on{ text-decoration:underline; text-underline-offset:3px; }

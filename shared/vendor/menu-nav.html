@@ -1,0 +1,18 @@
+<style>.menu a:focus,.menu a:focus-visible,.scol a:focus,.scol a:focus-visible{outline:none;}</style>
+<script>(function(){
+  function ml(){ return [].slice.call(document.querySelectorAll('.menu a[data-target],.scol a[data-sec]')); }
+  document.addEventListener('keydown', function(e){
+    var l = ml(); if(!l.length) return;
+    var i = l.indexOf(document.activeElement);
+    if(e.key==='ArrowDown'||e.key==='j'){ e.preventDefault(); var a=l[i<0?0:(i+1)%l.length]; a.click(); a.focus(); }
+    else if(e.key==='ArrowUp'||e.key==='k'){ e.preventDefault(); var b=l[i<0?l.length-1:(i-1+l.length)%l.length]; b.click(); b.focus(); }
+    else if(e.key==='ArrowLeft'){ e.preventDefault(); try{ parent.postMessage({pis:'toParent'}, '*'); }catch(x){} }
+  });
+  window.addEventListener('message', function(e){
+    if(e.data && e.data.pis==='focusMenu'){
+      var l = ml(), on = l[0];
+      for(var k=0;k<l.length;k++){ if(l[k].classList.contains('on')) on = l[k]; }
+      if(on) on.focus();
+    }
+  });
+})();</script>
