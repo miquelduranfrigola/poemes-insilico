@@ -207,7 +207,7 @@ _TEMPLATE = r"""<title>Versos proteics</title>
 
   .index{ width:220px; flex:none; position:sticky; top:0; align-self:flex-start;
           height:100vh; overflow:auto; padding:30px 22px; border-right:1px solid var(--line); }
-  .brand{ margin-bottom:26px; line-height:1.35; }
+  .brand{ margin-bottom:26px; line-height:1.35; min-height:58px; }
   .brand b{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }
   .brand span{ display:block; color:var(--muted); font-size:11px; margin-top:4px; text-transform:uppercase; letter-spacing:.08em; }
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
@@ -217,7 +217,7 @@ _TEMPLATE = r"""<title>Versos proteics</title>
   .menu li.meto a{ color:var(--ink); font-size:14px; }
 
   .view{ flex:1; min-width:0; }
-  .entry{ max-width:1000px; margin:0 auto; padding:clamp(40px,7vw,104px) clamp(22px,6vw,80px); }
+  .entry{ max-width:1000px; margin:0 auto; padding:114px clamp(22px,6vw,80px) clamp(40px,7vw,104px); }
 
   .kicker{ font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin:0 0 14px; }
   .title{ font-weight:400; font-size:clamp(24px,3.4vw,32px); line-height:1.1; letter-spacing:-.02em;

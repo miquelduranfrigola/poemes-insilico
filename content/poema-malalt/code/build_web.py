@@ -108,7 +108,7 @@ _TEMPLATE = r"""<title>Poema malalt</title>
   .site{ display:flex; align-items:flex-start; min-height:100vh; }
   .index{ width:220px; flex:none; position:sticky; top:0; align-self:flex-start;
           height:100vh; overflow:auto; padding:30px 22px; border-right:1px solid var(--line); }
-  .brand{ margin-bottom:26px; line-height:1.35; }
+  .brand{ margin-bottom:26px; line-height:1.35; min-height:58px; }
   .brand b{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }
   .brand span{ display:block; color:var(--muted); font-size:11px; margin-top:4px; text-transform:uppercase; letter-spacing:.08em; }
   .menu{ list-style:none; margin:0; padding:0; font-size:14px; }
@@ -118,7 +118,7 @@ _TEMPLATE = r"""<title>Poema malalt</title>
   .menu li.meto a{ color:var(--ink); font-size:14px; }
 
   .view{ flex:1; min-width:0; }
-  .entry{ max-width:1000px; margin:0 auto; padding:clamp(40px,7vw,104px) clamp(22px,6vw,80px); }
+  .entry{ max-width:1000px; margin:0 auto; padding:114px clamp(22px,6vw,80px) clamp(40px,7vw,104px); }
   .entry[hidden]{ display:none; }
   .entry{ animation:appear .3s ease both; }
   @keyframes appear{ from{ opacity:0; transform:translateY(8px);} to{ opacity:1; transform:none;} }
@@ -160,7 +160,7 @@ _TEMPLATE = r"""<title>Poema malalt</title>
   </nav>
   <main class="view">
     <section class="entry" id="poem">
-      <p class="kicker">{{AUTHOR}} · poema llavor</p>
+      <p class="kicker">{{AUTHOR}}</p>
       <h2 class="title">{{SEED}}</h2>
       <p class="dims" id="dims"></p>
       <div class="poem" id="poemtext"></div>
@@ -201,7 +201,7 @@ _TEMPLATE = r"""<title>Poema malalt</title>
         dims.innerHTML = 'Mutació '+st.n+' / '+N+' &nbsp; <b>'+st.before+'</b> <span class="arrow">→</span> <b>'+
           st.after+'</b> &nbsp; '+st.pos+' · '+st.edit;
       } else {
-        dims.innerHTML = 'Poema llavor · '+ (DATA.source.author||'');
+        dims.innerHTML = (DATA.source.author||'');
       }
     }
     function loop(){

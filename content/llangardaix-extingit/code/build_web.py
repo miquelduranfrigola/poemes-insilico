@@ -52,7 +52,7 @@ def build() -> Path:
   .app{{ display:flex; align-items:flex-start; min-height:100vh; }}
   .scol{{ width:220px; flex:none; position:sticky; top:0; height:100vh;
           padding:30px 22px; border-right:1px solid var(--line); }}
-  .brand{{ margin-bottom:26px; line-height:1.35; }}
+  .brand{{ margin-bottom:26px; line-height:1.35; min-height:58px; }}
   .brand b{{ font-weight:700; font-size:14px; display:block; letter-spacing:-.01em; }}
   .brand span{{ display:block; font-size:11px; color:var(--muted); margin-top:4px;
                 text-transform:uppercase; letter-spacing:.08em; }}
@@ -60,7 +60,7 @@ def build() -> Path:
   .scol a.meto{{ margin-top:16px; padding-top:12px; border-top:1px solid var(--line); }}
   .scol a.on{{ text-decoration:underline; text-underline-offset:3px; }}
   .scontent{{ flex:1; min-width:0; }}
-  .entry{{ max-width:1000px; margin:0 auto; padding:clamp(40px,7vw,104px) clamp(22px,6vw,80px); }}
+  .entry{{ max-width:1000px; margin:0 auto; padding:114px clamp(22px,6vw,80px) clamp(40px,7vw,104px); }}
   .kicker{{ font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin:0 0 14px; }}
   .title{{ font-weight:400; font-size:clamp(24px,3.4vw,32px); line-height:1.1; letter-spacing:-.02em; margin:0; }}
   .dims{{ font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin:16px 0 0; }}
