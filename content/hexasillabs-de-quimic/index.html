@@ -84,8 +84,9 @@
   }
   *{ scrollbar-width:none; -ms-overflow-style:none; box-sizing:border-box; }
   *::-webkit-scrollbar{ display:none; width:0; height:0; }
-  html{ scroll-behavior:smooth; }
-  html, body{ margin:0; padding:0; background:var(--ground); overflow-x:hidden; }
+  /* overflow-x on <html> only: on <body> it makes <body> a scroll container and breaks the sticky rail */
+  html{ scroll-behavior:smooth; overflow-x:hidden; }
+  html, body{ margin:0; padding:0; background:var(--ground); }
   body{ color:var(--ink); font-family:var(--mono); font-size:14px; line-height:1.65;
         -webkit-font-smoothing:antialiased; }
 
