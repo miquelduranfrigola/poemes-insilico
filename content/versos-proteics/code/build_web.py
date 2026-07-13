@@ -271,7 +271,7 @@ _TEMPLATE = r"""<title>Versos proteics</title>
 <div class="wrap"><div class="site">
   <nav class="index">
     <div class="brand"><a data-target="{{DEFAULT}}" href="#{{DEFAULT}}"><b>Versos proteics</b></a>
-      <span>de lletra a proteïna</span></div>
+      <span>Alfabet d'aminoàcids</span></div>
     <ol class="menu">{{MENU}}</ol>
   </nav>
   <main class="view">

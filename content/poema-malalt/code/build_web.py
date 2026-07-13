@@ -128,7 +128,7 @@ _TEMPLATE = r"""<title>Poema malalt</title>
          margin:18px 0 0; min-height:1.4em; }
   .dims b{ color:var(--ink); font-weight:400; } .dims .arrow,.dims .rd{ color:var(--red); }
 
-  .poem{ font-size:15px; line-height:2.05; margin:clamp(30px,5vw,52px) 0 0; overflow-x:auto; }
+  .poem{ font-size:14px; line-height:1.95; margin:clamp(30px,5vw,52px) 0 0; overflow-x:auto; }
   .poem .v{ display:block; white-space:nowrap; }
   .poem .br{ display:block; height:.9em; }
   .mut{ color:var(--red); }
@@ -152,7 +152,7 @@ _TEMPLATE = r"""<title>Poema malalt</title>
     <div class="brand"><a data-target="poem" href="#poem"><b>Poema malalt</b></a>
       <span>l'evolució d'un poema</span></div>
     <ol class="menu">
-      <li><a data-target="poem" href="#poem" class="on">Res no és mesquí (mutant)</a></li>
+      <li><a data-target="poem" href="#poem" class="on">Res no és mesquí</a></li>
       <li class="meto"><a data-target="metode" href="#metode">Metodologia</a></li>
     </ol>
   </nav>
