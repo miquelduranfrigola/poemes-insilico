@@ -1,0 +1,43 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: Tour de França
+slug: tour-de-france
+author: Miquel Duran-Frigola
+date: 2026-07-13
+order: 6
+language: ca
+# A self-contained animated map is served verbatim instead of poem.md.
+page: index.html
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: Viquipèdia (etapes del Tour)
+    description: >-
+      Font de les etapes de cada edició (1985–2026): vila de sortida, vila
+      d'arribada, distància i tipus, extretes de les taules de cada article.
+  - name: OpenStreetMap · Nominatim
+    description: >-
+      Geocodificació de cada vila de sortida i d'arribada a coordenades, per
+      poder situar les etapes sobre el mapa.
+  - name: reconstrucció d'arcs (Bézier)
+    description: >-
+      Codi propi que dibuixa cada etapa com una corba entre la sortida i
+      l'arribada; els traçats GPS reals no existeixen abans del 2014.
+  - name: Natural Earth
+    description: >-
+      Contorn simplificat dels països d'Europa occidental que fa de mapa base,
+      incrustat a la pàgina perquè funcioni sense connexió.
+# Free-form tags for grouping / filtering on the website.
+tags:
+  - mapa
+  - dades
+  - geografia
+  - ciclisme
+  - memoria
+# Multi-line description of the poem and the process behind it (Catalan).
+description: |
+  Un mapa animat que recorre totes les edicions del Tour de França des del 1985
+  —l'any que vaig néixer— fins al 2026. Cada dia de cada Tour es dibuixa com un arc
+  entre la vila de sortida i la d'arribada, i els anys s'encavalquen fins a formar
+  un embull de línies: la forma d'una vida mesurada en juliols. No són les
+  carreteres reals —els traçats GPS només existeixen a partir del 2014—, sinó
+  reconstruccions que uneixen d'on sortia cada etapa amb on arribava.

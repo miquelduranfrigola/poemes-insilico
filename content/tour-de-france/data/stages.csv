@@ -1,0 +1,905 @@
+year,stage_no,date,start,finish,distance_km,type
+1985,P,1985-06-28,Plumelec,Plumelec,6.0,Individual time trial
+1985,1,1985-06-29,Vannes,Lanester,256.0,Plain stage
+1985,2,1985-06-30,Lorient,Vitre,242.0,Plain stage
+1985,3,1985-07-01,Vitre,Fougères,73.0,Team time trial
+1985,4,1985-07-02,Fougères,Pont-Audemer,239.0,Plain stage
+1985,5,1985-07-03,Neufchâtel-en-Bray,Roubaix,224.0,Plain stage with cobblestones
+1985,6,1985-07-04,Roubaix,Reims,222.0,Plain stage
+1985,7,1985-07-05,Reims,Nancy,217.0,Plain stage
+1985,8,1985-07-06,Sarrebourg,Strasbourg,75.0,Individual time trial
+1985,9,1985-07-07,Strasbourg,Épinal,174.0,Hilly stage
+1985,10,1985-07-08,Épinal,Pontarlier,204.0,Hilly stage
+1985,11,1985-07-09,Pontarlier,Morzine Avoriaz,195.0,Stage with mountain(s)
+1985,12,1985-07-10,Morzine Avoriaz,Lans-en-Vercors,269.0,Stage with mountain(s)
+1985,13,1985-07-11,Villard-de-Lans,Villard-de-Lans,32.0,Individual time trial
+1985,14,1985-07-13,Autrans,Saint-Étienne,179.0,Hilly stage
+1985,15,1985-07-14,Saint-Étienne,Aurillac,238.0,Plain stage
+1985,16,1985-07-15,Aurillac,Toulouse,247.0,Plain stage
+1985,17,1985-07-16,Toulouse,Luz Ardiden,209.0,Stage with mountain(s)
+1985,18a,1985-07-17,Luz-Saint-Sauveur,Aubisque,53.0,Stage with mountain(s)
+1985,18b,1985-07-17,Laruns,Pau,83.0,Stage with mountain(s)
+1985,19,1985-07-18,Pau,Bordeaux,203.0,Plain stage
+1985,20,1985-07-19,Montpon-Ménestérol,Limoges,225.0,Plain stage
+1985,21,1985-07-20,Lac de Vassivière,Lac de Vassivière,46.0,Individual time trial
+1985,22,1985-07-21,Orléans,Paris,196.0,Plain stage
+1986,P,1986-07-04,Boulogne-Billancourt,Boulogne-Billancourt,4.6,Individual time trial
+1986,1,1986-07-05,Nanterre,Sceaux,85.0,Plain stage
+1986,2,1986-07-05,Meudon,Saint-Quentin-en-Yvelines,56.0,Team time trial
+1986,3,1986-07-06,Levallois-Perret,Liévin,214.0,Plain stage
+1986,4,1986-07-07,Liévin,Évreux,243.0,Plain stage
+1986,5,1986-07-08,Évreux,Villers-sur-Mer,124.5,Plain stage
+1986,6,1986-07-09,Villers-sur-Mer,Cherbourg,200.0,Plain stage
+1986,7,1986-07-10,Cherbourg,Saint-Hilaire-du-Harcouët,201.0,Plain stage
+1986,8,1986-07-11,Saint-Hilaire-du-Harcouët,Nantes,204.0,Plain stage
+1986,9,1986-07-12,Nantes,Nantes,61.5,Individual time trial
+1986,10,1986-07-13,Nantes,Futuroscope,183.0,Plain stage
+1986,11,1986-07-14,Futuroscope,Bordeaux,258.3,Plain stage
+1986,12,1986-07-15,Bayonne,Pau,217.5,Stage with mountain(s)
+1986,13,1986-07-16,Pau,Superbagnères,186.0,Stage with mountain(s)
+1986,14,1986-07-17,Superbagnères,Blagnac,154.0,Plain stage
+1986,15,1986-07-18,Carcassonne,Nîmes,225.5,Plain stage
+1986,16,1986-07-19,Nîmes,Gap,246.5,Plain stage
+1986,17,1986-07-20,Gap,Serre Chevalier,190.0,Stage with mountain(s)
+1986,18,1986-07-21,Briançon,Alpe d'Huez,162.5,Stage with mountain(s)
+1986,19,1986-07-23,Villard-de-Lans,Saint-Étienne,179.5,Plain stage
+1986,20,1986-07-24,Saint-Étienne,Saint-Étienne,58.0,Individual time trial
+1986,21,1986-07-25,Saint-Étienne,Puy de Dôme,190.0,Plain stage
+1986,22,1986-07-26,Clermont-Ferrand,Nevers,194.0,Plain stage
+1986,23,1986-07-27,Cosne-sur-Loire,Paris,255.0,Plain stage
+1987,P,1987-07-01,West Berlin,West Berlin,6.0,Individual time trial
+1987,1,1987-07-02,West Berlin,West Berlin,105.0,Plain stage
+1987,2,1987-07-02,West Berlin,West Berlin,41.0,Team time trial
+1987,3,1987-07-04,Karlsruhe,Stuttgart,219.0,Plain stage
+1987,4,1987-07-05,Stuttgart,Pforzheim,79.0,Plain stage
+1987,5,1987-07-05,Pforzheim,Strasbourg,112.0,Plain stage
+1987,6,1987-07-06,Strasbourg,Épinal,169.0,Plain stage
+1987,7,1987-07-07,Épinal,Troyes,211.0,Plain stage
+1987,8,1987-07-08,Troyes,Épinay-sous-Sénart,206.0,Plain stage
+1987,9,1987-07-09,Orléans,Renazé,260.0,Plain stage
+1987,10,1987-07-10,Saumur,Futuroscope,87.0,Individual time trial
+1987,11,1987-07-11,Poitiers,Chaumeil,206.0,Hilly stage
+1987,12,1987-07-12,Brive,Bordeaux,228.0,Plain stage
+1987,13,1987-07-13,Bayonne,Pau,219.0,Stage with mountain(s)
+1987,14,1987-07-14,Pau,Luz Ardiden,166.0,Stage with mountain(s)
+1987,15,1987-07-15,Tarbes,Blagnac,164.0,Plain stage
+1987,16,1987-07-16,Blagnac,Millau,216.0,Hilly stage
+1987,17,1987-07-17,Millau,Avignon,239.0,Hilly stage
+1987,18,1987-07-19,Carpentras,Mont Ventoux,37.0,Mountain time trial
+1987,19,1987-07-20,Valréas,Villard-de-Lans,185.0,Stage with mountain(s)
+1987,20,1987-07-21,Villard-de-Lans,Alpe d'Huez,201.0,Stage with mountain(s)
+1987,21,1987-07-22,Le Bourg-d'Oisans,La Plagne,185.0,Stage with mountain(s)
+1987,22,1987-07-23,La Plagne,Morzine,186.0,Stage with mountain(s)
+1987,23,1987-07-24,Saint-Julien-en-Genevois,Dijon,225.0,Plain stage
+1987,24,1987-07-25,Dijon,Dijon,38.0,Individual time trial
+1987,25,1987-07-26,Créteil,Paris,192.0,Plain stage
+1988,P,1988-07-03,Pornichet,La Baule,3.8,Team/Individual time trial
+1988,1,1988-07-04,Pontchâteau,Machecoul,92.0,Plain stage
+1988,2,1988-07-04,La Haie-Fouassière,Ancenis,48.0,Team time trial
+1988,3,1988-07-05,Nantes,Le Mans,213.0,Plain stage
+1988,4,1988-07-06,Le Mans,Évreux,158.0,Plain stage
+1988,5,1988-07-07,Neufchâtel-en-Bray,Liévin,148.0,Plain stage
+1988,6,1988-07-08,Liévin,Wasquehal,52.0,Individual time trial
+1988,7,1988-07-09,Wasquehal,Reims,225.0,Plain stage
+1988,8,1988-07-10,Reims,Nancy,219.0,Plain stage
+1988,9,1988-07-11,Nancy,Strasbourg,161.0,Hilly stage
+1988,10,1988-07-12,Belfort,Besançon,149.0,Hilly stage
+1988,11,1988-07-13,Besançon,Morzine,232.0,Stage with mountain(s)
+1988,12,1988-07-14,Morzine,Alpe d'Huez,227.0,Stage with mountain(s)
+1988,13,1988-07-15,Grenoble,Villard-de-Lans,38.0,Mountain time trial
+1988,14,1988-07-17,Blagnac,Guzet-Neige,163.0,Stage with mountain(s)
+1988,15,1988-07-18,Saint-Girons,Luz Ardiden,187.0,Stage with mountain(s)
+1988,16,1988-07-19,Tarbes,Pau,35.0,Plain stage
+1988,17,1988-07-19,Pau,Bordeaux,198.0,Plain stage
+1988,18,1988-07-20,Ruelle-sur-Touvre,Limoges,94.0,Plain stage
+1988,19,1988-07-21,Limoges,Puy-de-Dôme,188.0,Hilly stage
+1988,20,1988-07-22,Clermont-Ferrand,Chalon-sur-Saône,223.0,Plain stage
+1988,21,1988-07-23,Santenay,Santenay,46.0,Individual time trial
+1988,22,1988-07-24,Nemours,Paris,173.0,Plain stage
+1989,P,1989-07-01,Luxembourg City (Luxembourg),Luxembourg City (Luxembourg),7.8,Individual time trial
+1989,1,1989-07-02,Luxembourg City (Luxembourg),Luxembourg City (Luxembourg),135.5,Plain stage
+1989,2,1989-07-02,Luxembourg City (Luxembourg),Luxembourg City (Luxembourg),46.0,Team time trial
+1989,3,1989-07-03,Luxembourg City (Luxembourg),Spa (Belgium),241.0,Plain stage
+1989,4,1989-07-04,Liège (Belgium),Wasquehal,255.0,Plain stage
+1989,5,1989-07-06,Dinard,Rennes,73.0,Individual time trial
+1989,6,1989-07-07,Rennes,Futuroscope,259.0,Plain stage
+1989,7,1989-07-08,Poitiers,Bordeaux,258.5,Plain stage
+1989,8,1989-07-09,Labastide-d'Armagnac,Pau,157.0,Plain stage
+1989,9,1989-07-10,Pau,Cauterets,147.0,Stage with mountain(s)
+1989,10,1989-07-11,Cauterets,Superbagnères,136.0,Stage with mountain(s)
+1989,11,1989-07-12,Luchon,Blagnac,158.5,Stage with mountain(s)
+1989,12,1989-07-13,Toulouse,Montpellier,242.0,Plain stage
+1989,13,1989-07-14,Montpellier,Marseille,179.0,Plain stage
+1989,14,1989-07-15,Marseille,Gap,238.0,Stage with mountain(s)
+1989,15,1989-07-16,Gap,Orcières-Merlette,39.0,Mountain time trial
+1989,16,1989-07-18,Gap,Briançon,175.0,Stage with mountain(s)
+1989,17,1989-07-19,Briançon,Alpe d'Huez,165.0,Stage with mountain(s)
+1989,18,1989-07-20,Le Bourg-d'Oisans,Villard-de-Lans,91.5,Stage with mountain(s)
+1989,19,1989-07-21,Villard-de-Lans,Aix-les-Bains,125.0,Stage with mountain(s)
+1989,20,1989-07-22,Aix-les-Bains,L'Isle-d'Abeau,130.0,Plain stage
+1989,21,1989-07-23,Versailles,Paris,24.5,Individual time trial
+1990,P,1990-06-30,Futuroscope,Futuroscope,6.3,Individual time trial
+1990,1,1990-07-01,Futuroscope,Futuroscope,138.5,Plain stage
+1990,2,1990-07-01,Futuroscope,Futuroscope,44.5,Team time trial
+1990,3,1990-07-02,Poitiers,Nantes,233.0,Plain stage
+1990,4,1990-07-03,Nantes,Mont Saint-Michel,203.0,Plain stage
+1990,5,1990-07-04,Avranches,Rouen,301.0,Plain stage
+1990,6,1990-07-06,Sarrebourg,Vittel,202.5,Plain stage
+1990,7,1990-07-07,Vittel,Épinal,61.5,Individual time trial
+1990,8,1990-07-08,Épinal,Besançon,181.5,Plain stage
+1990,9,1990-07-09,Besançon,Geneva (Switzerland),196.0,Hilly stage
+1990,10,1990-07-10,Geneva (Switzerland),Saint-Gervais,118.5,Stage with mountain(s)
+1990,11,1990-07-11,Saint-Gervais,Alpe d'Huez,182.5,Stage with mountain(s)
+1990,12,1990-07-12,Fontaine,Villard-de-Lans,33.5,Mountain time trial
+1990,13,1990-07-14,Villard-de-Lans,Saint-Étienne,149.0,Hilly stage
+1990,14,1990-07-15,Le Puy-en-Velay,Millau,205.0,Hilly stage
+1990,15,1990-07-16,Millau,Revel,170.0,Plain stage
+1990,16,1990-07-17,Blagnac,Luz Ardiden,215.0,Stage with mountain(s)
+1990,17,1990-07-18,Lourdes,Pau,150.0,Stage with mountain(s)
+1990,18,1990-07-19,Pau,Bordeaux,202.0,Plain stage
+1990,19,1990-07-20,Castillon-la-Bataille,Limoges,182.5,Plain stage
+1990,20,1990-07-21,Lac de Vassivière,Lac de Vassivière,45.5,Individual time trial
+1990,21,1990-07-22,Brétigny-sur-Orge,Paris,182.5,Plain stage
+1991,P,1991-07-06,Lyon,Lyon,5.4,Individual time trial
+1991,1,1991-07-07,Lyon,Lyon,114.5,Plain stage
+1991,2,1991-07-07,Bron,Chassieu,36.5,Team time trial
+1991,3,1991-07-08,Villeurbanne,Dijon,210.5,Plain stage
+1991,4,1991-07-09,Dijon,Reims,286.0,Plain stage
+1991,5,1991-07-10,Reims,Valenciennes,149.5,Plain stage
+1991,6,1991-07-11,Arras,Le Havre,259.0,Plain stage
+1991,7,1991-07-12,Le Havre,Argentan,167.0,Plain stage
+1991,8,1991-07-13,Argentan,Alençon,73.0,Individual time trial
+1991,9,1991-07-14,Alençon,Rennes,161.0,Plain stage
+1991,10,1991-07-15,Rennes,Quimper,207.5,Plain stage
+1991,11,1991-07-16,Quimper,Saint-Herblain,246.0,Plain stage
+1991,12,1991-07-18,Pau,Jaca (Spain),192.0,Stage with mountain(s)
+1991,13,1991-07-19,Jaca (Spain),Val-Louron,232.0,Stage with mountain(s)
+1991,14,1991-07-20,St Gaudens,Castres,172.5,Plain stage
+1991,15,1991-07-21,Albi,Alès,235.0,Hilly stage
+1991,16,1991-07-22,Alès,Gap,215.0,Plain stage
+1991,17,1991-07-23,Gap,Alpe d'Huez,125.0,Stage with mountain(s)
+1991,18,1991-07-24,Le Bourg-d'Oisans,Morzine,255.0,Stage with mountain(s)
+1991,19,1991-07-25,Morzine,Aix-les-Bains,177.0,Hilly stage
+1991,20,1991-07-26,Aix-les-Bains,Mâcon,160.0,Hilly stage
+1991,21,1991-07-27,Lugny,Mâcon,57.0,Individual time trial
+1991,22,1991-07-28,Melun,Paris,178.0,Plain stage
+1992,P,1992-07-04,San Sebastián (Spain),San Sebastián (Spain),8.0,Individual time trial
+1992,1,1992-07-05,San Sebastián (Spain),San Sebastián (Spain),194.5,Hilly stage
+1992,2,1992-07-06,San Sebastián (Spain),Pau,255.0,Hilly stage
+1992,3,1992-07-07,Pau,Bordeaux,210.0,Plain stage
+1992,4,1992-07-08,Libourne,Libourne,63.5,Team time trial
+1992,5,1992-07-09,Nogent-sur-Oise,Wasquehal,196.0,Plain stage
+1992,6,1992-07-10,Roubaix,Brussels (Belgium),167.0,Plain stage
+1992,7,1992-07-11,Brussels (Belgium),Valkenburg (Netherlands),196.5,Plain stage
+1992,8,1992-07-12,Valkenburg (Netherlands),Koblenz (Germany),206.5,Plain stage
+1992,9,1992-07-13,Luxembourg City (Luxembourg),Luxembourg City (Luxembourg),65.0,Individual time trial
+1992,10,1992-07-14,Luxembourg City (Luxembourg),Strasbourg,217.0,Plain stage
+1992,11,1992-07-15,Strasbourg,Mulhouse,249.5,Hilly stage
+1992,12,1992-07-17,Dole,St Gervais,267.5,Hilly stage
+1992,13,1992-07-18,St Gervais,Sestriere (Italy),254.5,Stage with mountain(s)
+1992,14,1992-07-19,Sestriere (Italy),Alpe d'Huez,186.5,Stage with mountain(s)
+1992,15,1992-07-20,Le Bourg-d'Oisans,Saint-Étienne,198.0,Hilly stage
+1992,16,1992-07-21,Saint-Étienne,La Bourboule,212.0,Hilly stage
+1992,17,1992-07-22,La Bourboule,Montluçon,189.0,Plain stage
+1992,18,1992-07-23,Montluçon,Tours,212.0,Plain stage
+1992,19,1992-07-24,Tours,Blois,64.0,Individual time trial
+1992,20,1992-07-25,Blois,Nanterre,222.0,Plain stage
+1992,21,1992-07-26,La Défense,Paris,141.0,Plain stage
+1993,P,1993-07-03,Le Puy du Fou,Le Puy du Fou,6.8,Individual time trial
+1993,1,1993-07-04,Luçon,Les Sables-d'Olonne,215.0,Plain stage
+1993,2,1993-07-05,Les Sables-d'Olonne,Vannes,227.5,Plain stage
+1993,3,1993-07-06,Vannes,Dinard,189.5,Plain stage
+1993,4,1993-07-07,Dinard,Avranches,81.0,Team time trial
+1993,5,1993-07-08,Avranches,Évreux,225.5,Plain stage
+1993,6,1993-07-09,Évreux,Amiens,158.0,Plain stage
+1993,7,1993-07-10,Péronne,Châlons-sur-Marne,199.0,Plain stage
+1993,8,1993-07-11,Châlons-sur-Marne,Verdun,184.5,Plain stage
+1993,9,1993-07-12,Lac de Madine,Lac de Madine,59.0,Individual time trial
+1993,10,1993-07-14,Villard-de-Lans,Serre Chevalier,203.0,Stage with mountain(s)
+1993,11,1993-07-15,Serre Chevalier,Isola 2000,179.0,Stage with mountain(s)
+1993,12,1993-07-16,Isola,Marseille,286.5,Plain stage
+1993,13,1993-07-17,Marseille,Montpellier,181.5,Plain stage
+1993,14,1993-07-18,Montpellier,Perpignan,223.0,Plain stage
+1993,15,1993-07-19,Perpignan,Pal,231.5,Stage with mountain(s)
+1993,16,1993-07-21,Andorra,Saint-Lary-Soulan Pla d'Adet,230.0,Stage with mountain(s)
+1993,17,1993-07-22,Tarbes,Pau,190.0,Stage with mountain(s)
+1993,18,1993-07-23,Orthez,Bordeaux,199.5,Plain stage
+1993,19,1993-07-24,Brétigny-sur-Orge,Montlhéry,48.0,Individual time trial
+1993,20,1993-07-25,Viry-Châtillon,Paris,196.5,Plain stage
+1994,P,1994-07-02,Lille,Lille,7.2,Individual time trial
+1994,1,1994-07-03,Lille,Armentières,234.0,Plain stage
+1994,2,1994-07-04,Roubaix,Boulogne-sur-Mer,203.5,Plain stage
+1994,3,1994-07-05,Calais,Eurotunnel,66.5,Team time trial
+1994,4,1994-07-06,Dover (United Kingdom),Brighton (United Kingdom),204.5,Plain stage
+1994,5,1994-07-07,Portsmouth (United Kingdom),Portsmouth (United Kingdom),187.0,Plain stage
+1994,6,1994-07-08,Cherbourg-en-Cotentin,Rennes,270.5,Plain stage
+1994,7,1994-07-09,Rennes,Futuroscope,259.5,Plain stage
+1994,8,1994-07-10,Poitiers,Trélissac,218.5,Plain stage
+1994,9,1994-07-11,Périgueux,Bergerac,64.0,Individual time trial
+1994,10,1994-07-12,Bergerac,Cahors,160.5,Plain stage
+1994,11,1994-07-13,Cahors,Hautacam,263.5,Stage with mountain(s)
+1994,12,1994-07-15,Lourdes,Luz Ardiden,204.5,Stage with mountain(s)
+1994,13,1994-07-16,Bagnères-de-Bigorre,Albi,223.0,Plain stage
+1994,14,1994-07-17,Castres,Montpellier,202.0,Plain stage
+1994,15,1994-07-18,Montpellier,Carpentras,231.0,Stage with mountain(s)
+1994,16,1994-07-19,Valréas,Alpe d'Huez,224.5,Stage with mountain(s)
+1994,17,1994-07-20,Le Bourg-d'Oisans,Val Thorens,149.0,Stage with mountain(s)
+1994,18,1994-07-21,Moutiers,Cluses,174.5,Stage with mountain(s)
+1994,19,1994-07-22,Cluses,Avoriaz,47.5,Mountain time trial
+1994,20,1994-07-23,Morzine,Lac Saint-Point,208.5,Hilly stage
+1994,21,1994-07-24,Disneyland Paris,Paris,175.0,Plain stage
+1995,P,1995-07-01,Saint-Brieuc,Saint-Brieuc,7.3,Individual time trial
+1995,1,1995-07-02,Dinan,Lannion,233.5,Plain stage
+1995,2,1995-07-03,Perros-Guirec,Vitre,235.5,Plain stage
+1995,3,1995-07-04,Mayenne,Alençon,67.0,Team time trial
+1995,4,1995-07-05,Alençon,Le Havre,162.0,Plain stage
+1995,5,1995-07-06,Fécamp,Dunkirk,261.0,Plain stage
+1995,6,1995-07-07,Dunkirk,Charleroi (Belgium),202.0,Plain stage
+1995,7,1995-07-08,Charleroi (Belgium),Liège (Belgium),203.0,Hilly stage
+1995,8,1995-07-09,Huy (Belgium),Seraing (Belgium),54.0,Individual time trial
+1995,9,1995-07-11,Le Grand-Bornand,La Plagne,160.0,Stage with mountain(s)
+1995,10,1995-07-12,La Plagne,Alpe d'Huez,162.5,Stage with mountain(s)
+1995,11,1995-07-13,Le Bourg-d'Oisans,Saint-Étienne,199.0,Hilly stage
+1995,12,1995-07-14,Saint-Étienne,Mende,222.5,Hilly stage
+1995,13,1995-07-15,Mende,Revel,245.0,Plain stage
+1995,14,1995-07-16,Saint-Orens-de-Gameville,Guzet-Neige,164.0,Stage with mountain(s)
+1995,15,1995-07-18,Saint-Girons,Cauterets,206.0,Stage with mountain(s)
+1995,16,1995-07-19,Tarbes,Pau,237.0,Stage with mountain(s)
+1995,17,1995-07-20,Pau,Bordeaux,246.0,Plain stage
+1995,18,1995-07-21,Montpon-Ménestérol,Limoges,166.5,Plain stage
+1995,19,1995-07-22,Lac de Vassivière,Lac de Vassivière,46.5,Individual time trial
+1995,20,1995-07-23,Sainte-Geneviève-des-Bois,Paris,155.0,Plain stage
+1996,P,1996-06-29,'s-Hertogenbosch (Netherlands),'s-Hertogenbosch (Netherlands),9.4,Individual time trial
+1996,1,1996-06-30,'s-Hertogenbosch (Netherlands),'s-Hertogenbosch (Netherlands),209.0,Plain stage
+1996,2,1996-07-01,'s-Hertogenbosch (Netherlands),Wasquehal,247.5,Plain stage
+1996,3,1996-07-02,Wasquehal,Nogent-sur-Oise,195.0,Plain stage
+1996,4,1996-07-03,Soissons,Lac de Madine,232.0,Plain stage
+1996,5,1996-07-04,Lac de Madine,Besançon,242.0,Plain stage
+1996,6,1996-07-05,Arc-et-Senans,Aix-les-Bains,207.0,Hilly stage
+1996,7,1996-07-06,Chambéry,Les Arcs,200.0,Stage with mountain(s)
+1996,8,1996-07-07,Bourg-Saint-Maurice,Val d'Isère,30.5,Individual time trial
+1996,9,1996-07-08,Le Monêtier-les-Bains,Sestriere (Italy),46.0,Stage with mountain(s)
+1996,10,1996-07-09,Turin (Italy),Gap,208.5,Hilly stage
+1996,11,1996-07-11,Gap,Valence,202.0,Hilly stage
+1996,12,1996-07-12,Valence,Le Puy-en-Velay,143.5,Hilly stage
+1996,13,1996-07-13,Le Puy-en-Velay,Super Besse,177.0,Hilly stage
+1996,14,1996-07-14,Besse,Tulle,186.5,Hilly stage
+1996,15,1996-07-15,Brive-la-Gaillarde,Villeneuve-sur-Lot,176.0,Plain stage
+1996,16,1996-07-16,Agen,Hautacam,199.0,Stage with mountain(s)
+1996,17,1996-07-17,Argelès-Gazost,Pamplona (Spain),262.0,Stage with mountain(s)
+1996,18,1996-07-18,Pamplona (Spain),Hendaye,154.5,Hilly stage
+1996,19,1996-07-19,Hendaye,Bordeaux,226.5,Plain stage
+1996,20,1996-07-20,Bordeaux,Saint-Émilion,63.5,Individual time trial
+1996,21,1996-07-21,Palaiseau,Paris,147.5,Plain stage
+1997,P,1997-07-05,Rouen,Rouen,7.3,Individual time trial
+1997,1,1997-07-06,Rouen,Forges-les-Eaux,192.0,Flat stage
+1997,2,1997-07-07,Saint-Valery-en-Caux,Vire,262.0,Flat stage
+1997,3,1997-07-08,Vire,Plumelec,224.0,Flat stage
+1997,4,1997-07-09,Plumelec,Le Puy du Fou,223.0,Flat stage
+1997,5,1997-07-10,Chantonnay,La Châtre,261.5,Flat stage
+1997,6,1997-07-11,Le Blanc,Marennes,217.5,Flat stage
+1997,7,1997-07-12,Marennes,Bordeaux,194.0,Flat stage
+1997,8,1997-07-13,Sauternes,Pau,161.5,Flat stage
+1997,9,1997-07-14,Pau,Loudenvielle,182.0,Mountain stage
+1997,10,1997-07-15,Luchon,Andorra Arcalis,252.5,Mountain stage
+1997,11,1997-07-16,Andorra Arcalis,Perpignan,192.0,Hilly stage
+1997,12,1997-07-18,Saint-Étienne,Saint-Étienne,55.0,Individual time trial
+1997,13,1997-07-19,Saint-Étienne,Alpe d'Huez,203.5,Mountain stage
+1997,14,1997-07-20,Le Bourg-d'Oisans,Courchevel,148.0,Mountain stage
+1997,15,1997-07-21,Courchevel,Morzine,208.5,Mountain stage
+1997,16,1997-07-22,Morzine,Fribourg (Switzerland),181.0,Hilly stage
+1997,17,1997-07-23,Fribourg (Switzerland),Colmar,218.5,Flat stage
+1997,18,1997-07-24,Colmar,Montbéliard,175.5,Hilly stage
+1997,19,1997-07-25,Montbéliard,Dijon,172.0,Flat stage
+1997,20,1997-07-26,Disneyland Paris,Disneyland Paris,63.0,Individual time trial
+1997,21,1997-07-27,Disneyland Paris,Paris,149.5,Flat stage
+1998,P,1998-07-11,Dublin (Ireland),Dublin (Ireland),5.6,Individual time trial
+1998,1,1998-07-12,Dublin (Ireland),Dublin (Ireland),180.5,Flat stage
+1998,2,1998-07-13,Enniscorthy (Ireland),Cork (Ireland),205.5,Flat stage
+1998,3,1998-07-14,Roscoff,Lorient,169.0,Flat stage
+1998,4,1998-07-15,Plouay,Cholet,252.0,Flat stage
+1998,5,1998-07-16,Cholet,Châteauroux,228.5,Flat stage
+1998,6,1998-07-17,La Châtre,Brive-la-Gaillarde,204.5,Flat stage
+1998,7,1998-07-18,Meyrignac-l'Église,Corrèze,58.0,Individual time trial
+1998,8,1998-07-19,Brive-la-Gaillarde,Montauban,190.5,Flat stage
+1998,9,1998-07-20,Montauban,Pau,210.0,Flat stage
+1998,10,1998-07-21,Pau,Luchon,196.5,High mountain stage
+1998,11,1998-07-22,Luchon,Plateau de Beille,170.0,High mountain stage
+1998,12,1998-07-24,Tarascon-sur-Ariège,Cap d'Agde,190.0,Flat stage
+1998,13,1998-07-25,Frontignan la Peyrade,Carpentras,196.0,Flat stage
+1998,14,1998-07-26,Valréas,Grenoble,186.5,Mountain stage
+1998,15,1998-07-27,Grenoble,Les Deux Alpes,189.0,High mountain stage
+1998,16,1998-07-28,Vizille,Albertville,204.0,High mountain stage
+1998,17,1998-07-29,Albertville,Aix-les-Bains,149.0,High mountain stage
+1998,18,1998-07-30,Aix-les-Bains,Neuchâtel (Switzerland),218.5,Mountain stage
+1998,19,1998-07-31,La Chaux-de-Fonds (Switzerland),Autun,242.0,Flat stage
+1998,20,1998-08-01,Montceau-les-Mines,Le Creusot,52.0,Individual time trial
+1998,21,1998-08-02,Melun,Paris,147.5,Flat stage
+1999,P,1999-07-03,Le Puy du Fou,Le Puy du Fou,6.8,Individual time trial
+1999,1,1999-07-04,Montaigu,Challans,208.0,Plain stage
+1999,2,1999-07-05,Challans,Saint-Nazaire,176.0,Plain stage
+1999,3,1999-07-06,Nantes,Laval,194.5,Plain stage
+1999,4,1999-07-07,Laval,Blois,194.5,Plain stage
+1999,5,1999-07-08,Bonneval,Amiens,233.5,Plain stage
+1999,6,1999-07-09,Amiens,Maubeuge,171.5,Plain stage
+1999,7,1999-07-10,Avesnes-sur-Helpe,Thionville,227.0,Plain stage
+1999,8,1999-07-11,Metz,Metz,56.5,Individual time trial
+1999,9,1999-07-13,Le Grand-Bornand,Sestrières,213.5,Stage with mountain(s)
+1999,10,1999-07-14,Sestrières,Alpe d'Huez,220.5,Stage with mountain(s)
+1999,11,1999-07-15,Le Bourg-d'Oisans,Saint-Étienne,198.5,Hilly stage
+1999,12,1999-07-16,Saint-Galmier,Saint-Flour,201.5,Hilly stage
+1999,13,1999-07-17,Saint-Flour,Albi,236.5,Hilly stage
+1999,14,1999-07-18,Castres,Saint-Gaudens,199.0,Plain stage
+1999,15,1999-07-20,Saint-Gaudens,Piau-Engaly,173.0,Stage with mountain(s)
+1999,16,1999-07-21,Lannemezan,Pau,192.0,Stage with mountain(s)
+1999,17,1999-07-22,Mourenx,Bordeaux,200.0,Plain stage
+1999,18,1999-07-23,Jonzac,Futuroscope,187.5,Plain stage
+1999,19,1999-07-24,Futuroscope,Futuroscope,57.0,Individual time trial
+1999,20,1999-07-25,Arpajon,Paris,143.5,Plain stage
+2000,1,2000-07-01,Futuroscope,Futuroscope,16.5,Individual time trial
+2000,2,2000-07-02,Futuroscope,Loudun,194.0,Plain stage
+2000,3,2000-07-03,Loudun,Nantes,161.5,Plain stage
+2000,4,2000-07-04,Nantes,Saint-Nazaire,70.0,Team time trial
+2000,5,2000-07-05,Vannes,Vitré,202.0,Plain stage
+2000,6,2000-07-06,Vitré,Tours,198.5,Plain stage
+2000,7,2000-07-07,Tours,Limoges,205.5,Plain stage
+2000,8,2000-07-08,Limoges,Villeneuve-sur-Lot,203.5,Plain stage
+2000,9,2000-07-09,Agen,Dax,181.0,Plain stage
+2000,10,2000-07-10,Dax,Hautacam,205.0,Stage with mountain(s)
+2000,11,2000-07-11,Bagnères-de-Bigorre,Revel,218.5,Hilly stage
+2000,12,2000-07-13,Carpentras,Mont Ventoux,149.0,Stage with mountain(s)
+2000,13,2000-07-14,Avignon,Draguignan,185.5,Plain stage
+2000,14,2000-07-15,Draguignan,Briançon,249.5,Stage with mountain(s)
+2000,15,2000-07-16,Briançon,Courchevel,173.5,Stage with mountain(s)
+2000,16,2000-07-18,Courchevel,Morzine,196.5,Stage with mountain(s)
+2000,17,2000-07-19,Évian-les-Bains,Lausanne,155.0,Hilly stage
+2000,18,2000-07-20,Lausanne,Freiburg (Germany),246.5,Plain stage
+2000,19,2000-07-21,Freiburg (Germany),Mulhouse,58.5,Individual time trial
+2000,20,2000-07-22,Belfort,Troyes,254.5,Plain stage
+2000,21,2000-07-23,Paris,Paris,138.0,Plain stage
+2001,P,2001-07-07,Dunkirk,Dunkirk,8.2,Individual time trial
+2001,1,2001-07-08,Saint-Omer,Boulogne-sur-Mer,194.5,Flat stage
+2001,2,2001-07-09,Calais,Antwerp (Belgium),220.5,Flat stage
+2001,3,2001-07-10,Antwerp (Belgium),Seraing (Belgium),198.5,Flat stage
+2001,4,2001-07-11,Huy (Belgium),Verdun,215.0,Flat stage
+2001,5,2001-07-12,Verdun,Bar-le-Duc,67.0,Team time trial
+2001,6,2001-07-13,Commercy,Strasbourg,211.5,Flat stage
+2001,7,2001-07-14,Strasbourg,Colmar,162.5,Medium mountain stage
+2001,8,2001-07-15,Colmar,Pontarlier,222.5,Flat stage
+2001,9,2001-07-16,Pontarlier,Aix-les-Bains,185.0,Flat stage
+2001,10,2001-07-17,Aix-les-Bains,Alpe d'Huez,209.0,High mountain stage
+2001,11,2001-07-18,Grenoble,Chamrousse,32.0,Individual time trial
+2001,12,2001-07-20,Perpignan,Plateau de Bonascre,166.5,High mountain stage
+2001,13,2001-07-21,Foix,Saint-Lary-Soulan Pla d'Adet,194.0,High mountain stage
+2001,14,2001-07-22,Tarbes,Luz Ardiden,141.5,High mountain stage
+2001,15,2001-07-24,Pau,Lavaur,232.5,Flat stage
+2001,16,2001-07-25,Castelsarrasin,Sarran,229.5,Flat stage
+2001,17,2001-07-26,Brive-la-Gaillarde,Montluçon,194.0,Flat stage
+2001,18,2001-07-27,Montluçon,Saint-Amand-Montrond,61.0,Individual time trial
+2001,19,2001-07-28,Orléans,Évry,149.5,Flat stage
+2001,20,2001-07-29,Corbeil-Essonnes,Paris,160.5,Flat stage
+2002,P,2002-07-06,Luxembourg City (Luxembourg),Luxembourg City (Luxembourg),7.0,Individual time trial
+2002,1,2002-07-07,Luxembourg City (Luxembourg),Luxembourg City (Luxembourg),192.5,Plain stage
+2002,2,2002-07-08,Luxembourg City (Luxembourg),Saarbrücken (Germany),181.0,Plain stage
+2002,3,2002-07-09,Metz,Reims,174.5,Plain stage
+2002,4,2002-07-10,Épernay,Château-Thierry,67.5,Team time trial
+2002,5,2002-07-11,Soissons,Rouen,195.0,Plain stage
+2002,6,2002-07-12,Forges-les-Eaux,Alençon,199.5,Plain stage
+2002,7,2002-07-13,Bagnoles-de-l'Orne,Avranches,176.0,Plain stage
+2002,8,2002-07-14,Saint-Martin-de-Landelles,Plouay,217.5,Plain stage
+2002,9,2002-07-15,Lanester,Lorient,52.0,Individual time trial
+2002,10,2002-07-17,Bazas,Pau,147.0,Plain stage
+2002,11,2002-07-18,Pau,La Mongie,158.0,Stage with mountain(s)
+2002,12,2002-07-19,Lannemezan,Plateau de Beille,199.5,Stage with mountain(s)
+2002,13,2002-07-20,Lavelanet,Béziers,171.0,Plain stage
+2002,14,2002-07-21,Lodève,Mont Ventoux,221.0,Stage with mountain(s)
+2002,15,2002-07-23,Vaison-la-Romaine,Les Deux Alpes,226.5,Hilly stage
+2002,16,2002-07-24,Les Deux Alpes,La Plagne,179.5,Stage with mountain(s)
+2002,17,2002-07-25,Aime,Cluses,142.0,Stage with mountain(s)
+2002,18,2002-07-26,Cluses,Bourg-en-Bresse,176.5,Hilly stage
+2002,19,2002-07-27,Régnié-Durette,Mâcon,50.0,Individual time trial
+2002,20,2002-07-28,Melun,Paris,144.0,Plain stage
+2003,P,2003-07-05,Paris,Paris,6.5,Individual time trial
+2003,1,2003-07-06,Saint-Denis,Meaux,168.0,Flat stage
+2003,2,2003-07-07,La Ferté-sous-Jouarre,Sedan,204.5,Flat stage
+2003,3,2003-07-08,Charleville-Mézières,Saint-Dizier,167.5,Flat stage
+2003,4,2003-07-09,Joinville,Saint-Dizier,69.0,Team time trial
+2003,5,2003-07-10,Troyes,Nevers,196.5,Flat stage
+2003,6,2003-07-11,Nevers,Lyon,230.0,Flat stage
+2003,7,2003-07-12,Lyon,Morzine,230.5,Mountain Stage (s)
+2003,8,2003-07-13,Sallanches,Alpe d'Huez,219.0,Mountain Stage (s)
+2003,9,2003-07-14,Le Bourg-d'Oisans,Gap,184.5,Mountain Stage (s)
+2003,10,2003-07-15,Gap,Marseille,219.5,Flat stage
+2003,11,2003-07-17,Narbonne,Toulouse,153.5,Flat stage
+2003,12,2003-07-18,Gaillac,Cap Découverte,47.0,Individual time trial
+2003,13,2003-07-19,Toulouse,Ax 3 Domaines,197.5,Mountain Stage (s)
+2003,14,2003-07-20,Saint-Girons,Loudenvielle,191.5,Mountain Stage (s)
+2003,15,2003-07-21,Bagnères-de-Bigorre,Luz Ardiden,159.5,Mountain Stage (s)
+2003,16,2003-07-23,Pau,Bayonne,197.5,Hilly stage
+2003,17,2003-07-24,Dax,Bordeaux,181.0,Flat stage
+2003,18,2003-07-25,Bordeaux,Saint-Maixent-l'École,203.5,Flat stage
+2003,19,2003-07-26,Pornic,Nantes,49.0,Individual time trial
+2003,20,2003-07-27,Ville-d'Avray,Paris,152.0,Flat stage
+2004,P,2004-07-03,Liège (Belgium),Liège (Belgium),6.1,Individual time trial
+2004,1,2004-07-04,Liège (Belgium),Charleroi (Belgium),202.5,Plain stage
+2004,2,2004-07-05,Charleroi (Belgium),Namur (Belgium),197.0,Plain stage
+2004,3,2004-07-06,Waterloo (Belgium),Wasquehal,210.0,Plain stage
+2004,4,2004-07-07,Cambrai,Arras,64.5,Team time trial
+2004,5,2004-07-08,Amiens,Chartres,200.5,Plain stage
+2004,6,2004-07-09,Bonneval,Angers,196.0,Plain stage
+2004,7,2004-07-10,Châteaubriant,Saint-Brieuc,204.5,Plain stage
+2004,8,2004-07-11,Lamballe,Quimper,168.0,Plain stage
+2004,9,2004-07-13,Saint-Léonard-de-Noblat,Guéret,160.5,Plain stage
+2004,10,2004-07-14,Limoges,Saint-Flour,237.0,Hilly stage
+2004,11,2004-07-15,Saint-Flour,Figeac,164.0,Hilly stage
+2004,12,2004-07-16,Castelsarrasin,La Mongie,197.5,Mountain stage
+2004,13,2004-07-17,Lannemezan,Plateau de Beille,205.5,Mountain stage
+2004,14,2004-07-18,Carcassonne,Nîmes,192.5,Plain stage
+2004,15,2004-07-20,Valréas,Villard-de-Lans,180.5,Mountain stage
+2004,16,2004-07-21,Le Bourg-d'Oisans,Alpe d'Huez,15.5,Individual time trial
+2004,17,2004-07-22,Le Bourg-d'Oisans,Le Grand-Bornand,204.5,Mountain stage
+2004,18,2004-07-23,Annemasse,Lons-le-Saunier,166.5,Hilly stage
+2004,19,2004-07-24,Besançon,Besançon,55.0,Individual time trial
+2004,20,2004-07-25,Montereau-Fault-Yonne,Paris,163.0,Plain stage
+2005,1,2005-07-02,Fromentine,Noirmoutier-en-l'Île,19.0,Individual time trial
+2005,2,2005-07-03,Challans,Les Essarts,181.5,Plain stage
+2005,3,2005-07-04,La Châtaigneraie,Tours,212.5,Plain stage
+2005,4,2005-07-05,Tours,Blois,67.5,Team time trial
+2005,5,2005-07-06,Chambord,Montargis,183.0,Plain stage
+2005,6,2005-07-07,Troyes,Nancy,199.0,Plain stage
+2005,7,2005-07-08,Lunéville,Karlsruhe (Germany),228.5,Plain stage
+2005,8,2005-07-09,Pforzheim (Germany),Gérardmer,231.5,Hilly stage
+2005,9,2005-07-10,Gérardmer,Mulhouse,171.0,Hilly stage
+2005,10,2005-07-12,Grenoble,Courchevel,177.0,Mountain stage
+2005,11,2005-07-13,Courchevel,Briançon,173.0,Mountain stage
+2005,12,2005-07-14,Briançon,Digne-les-Bains,187.0,Hilly stage
+2005,13,2005-07-15,Miramas,Montpellier,173.5,Plain stage
+2005,14,2005-07-16,Agde,Ax 3 Domaines,220.5,Mountain stage
+2005,15,2005-07-17,Lézat-sur-Lèze,Saint-Lary-Soulan Pla d'Adet,205.5,Mountain stage
+2005,16,2005-07-19,Mourenx,Pau,180.5,Mountain stage
+2005,17,2005-07-20,Pau,Revel,239.5,Plain stage
+2005,18,2005-07-21,Albi,Mende,189.0,Hilly stage
+2005,19,2005-07-22,Issoire,Le Puy-en-Velay,153.5,Hilly stage
+2005,20,2005-07-23,Saint-Étienne,Saint-Étienne,55.5,Individual time trial
+2005,21,2005-07-24,Corbeil-Essonnes,Paris,144.5,Plain stage
+2006,P,2006-07-01,Strasbourg,Strasbourg,7.1,Individual time trial
+2006,1,2006-07-02,Strasbourg,Strasbourg,184.5,Flat stage
+2006,2,2006-07-03,Obernai,Esch-sur-Alzette (Luxembourg),228.5,Flat stage
+2006,3,2006-07-04,Esch-sur-Alzette (Luxembourg),Valkenburg (Netherlands),216.5,Hilly stage
+2006,4,2006-07-05,Huy (Belgium),Saint-Quentin,207.0,Flat stage
+2006,5,2006-07-06,Beauvais,Caen,225.0,Flat stage
+2006,6,2006-07-07,Lisieux,Vitré,189.0,Flat stage
+2006,7,2006-07-08,Saint Grégoire,Rennes,52.0,Individual time trial
+2006,8,2006-07-09,Saint-Méen-le-Grand,Lorient,181.0,Flat stage
+2006,9,2006-07-11,Bordeaux,Dax,169.5,Flat stage
+2006,10,2006-07-12,Cambo-les-Bains,Pau,190.5,Mountain stage
+2006,11,2006-07-13,Tarbes,Val d'Aran/Pla-de-Beret (Spain),206.5,Mountain stage
+2006,12,2006-07-14,Luchon,Carcassonne,211.5,Hilly stage
+2006,13,2006-07-15,Béziers,Montélimar,230.0,Flat stage
+2006,14,2006-07-16,Montélimar,Gap,180.5,Hilly stage
+2006,15,2006-07-18,Gap,Alpe d'Huez,187.0,Mountain stage
+2006,16,2006-07-19,Le Bourg-d'Oisans,La Toussuire,182.0,Mountain stage
+2006,17,2006-07-20,Saint-Jean-de-Maurienne,Morzine,200.5,Mountain stage
+2006,18,2006-07-21,Morzine,Mâcon,197.0,Flat stage
+2006,19,2006-07-22,Le Creusot,Montceau-les-Mines,57.0,Individual time trial
+2006,20,2006-07-23,Antony/Parc de Sceaux,Paris,154.5,Flat stage
+2007,P,2007-07-07,London (United Kingdom),London (United Kingdom),7.9,Individual time trial
+2007,1,2007-07-08,London (United Kingdom),Canterbury (United Kingdom),203.0,Plain stage
+2007,2,2007-07-09,Dunkirk,Ghent (Belgium),168.5,Plain stage
+2007,3,2007-07-10,Waregem (Belgium),Compiègne,236.5,Plain stage
+2007,4,2007-07-11,Villers-Cotterêts,Joigny,193.0,Plain stage
+2007,5,2007-07-12,Chablis,Autun,182.5,Intermediate stage
+2007,6,2007-07-13,Semur-en-Auxois,Bourg-en-Bresse,199.5,Plain stage
+2007,7,2007-07-14,Bourg-en-Bresse,Le Grand-Bornand,197.5,Mountain stage
+2007,8,2007-07-15,Le Grand-Bornand,Tignes,165.0,Mountain stage
+2007,9,2007-07-17,Val-d'Isère,Briançon,159.5,Mountain stage
+2007,10,2007-07-18,Tallard,Marseille,229.5,Plain stage
+2007,11,2007-07-19,Marseille,Montpellier,182.5,Plain stage
+2007,12,2007-07-20,Montpellier,Castres,178.5,Intermediate stage
+2007,13,2007-07-21,Albi,Albi,54.0,Individual time trial
+2007,14,2007-07-22,Mazamet,Plateau-de-Beille,197.0,Mountain stage
+2007,15,2007-07-23,Foix,Loudenvielle,196.0,Mountain stage
+2007,16,2007-07-25,Orthez,Gourette–Col d'Aubisque,218.5,Mountain stage
+2007,17,2007-07-26,Pau,Castelsarrasin,188.5,Intermediate stage
+2007,18,2007-07-27,Cahors,Angoulême,211.0,Plain stage
+2007,19,2007-07-28,Cognac,Angoulême,55.5,Individual time trial
+2007,20,2007-07-29,Marcoussis,Paris,146.0,Plain stage
+2008,1,2008-07-05,Brest,Plumelec,197.5,Flat stage
+2008,2,2008-07-06,Auray,Saint-Brieuc,164.5,Flat stage
+2008,3,2008-07-07,Saint-Malo,Nantes,208.0,Flat stage
+2008,4,2008-07-08,Cholet,Cholet,29.5,Individual time trial
+2008,5,2008-07-09,Cholet,Châteauroux,232.0,Flat stage
+2008,6,2008-07-10,Aigurande,Super-Besse Sancy,195.5,Transition stage
+2008,7,2008-07-11,Brioude,Aurillac,159.0,Transition stage
+2008,8,2008-07-12,Figeac,Toulouse,172.5,Flat stage
+2008,9,2008-07-13,Toulouse,Bagnères-de-Bigorre,224.0,Mountain stage
+2008,10,2008-07-14,Pau,Hautacam,156.0,Mountain stage
+2008,11,2008-07-16,Lannemezan,Foix,167.5,Transition stage
+2008,12,2008-07-17,Lavelanet,Narbonne,168.5,Flat stage
+2008,13,2008-07-18,Narbonne,Nîmes,182.0,Flat stage
+2008,14,2008-07-19,Nîmes,Digne-les-Bains,194.5,Flat stage
+2008,15,2008-07-20,Embrun,Prato Nevoso (Italy),183.0,Mountain stage
+2008,16,2008-07-22,Cuneo (Italy),Jausiers,157.0,Mountain stage
+2008,17,2008-07-23,Embrun,Alpe d'Huez,210.5,Mountain stage
+2008,18,2008-07-24,Bourg-d'Oisans,Saint-Étienne,196.5,Transition stage
+2008,19,2008-07-25,Roanne,Montluçon,165.5,Flat stage
+2008,20,2008-07-26,Cérilly,Saint-Amand-Montrond,53.0,Individual time trial
+2008,21,2008-07-27,Étampes,Paris,143.0,Flat stage
+2009,1,2009-07-04,Monaco,Monaco,15.5,Individual time trial
+2009,2,2009-07-05,Monaco,Brignoles,187.0,Flat stage
+2009,3,2009-07-06,Marseille,La Grande-Motte,196.5,Flat stage
+2009,4,2009-07-07,Montpellier,Montpellier,39.0,Team time trial
+2009,5,2009-07-08,Cap d'Agde,Perpignan,196.5,Flat stage
+2009,6,2009-07-09,Girona (Spain),Barcelona (Spain),181.5,Flat stage
+2009,7,2009-07-10,Barcelona,Andorra-Arcalis (Andorra),224.0,Mountain stage
+2009,8,2009-07-11,Andorra la Vella,Saint-Girons,176.5,Mountain stage
+2009,9,2009-07-12,Saint-Gaudens,Tarbes,160.5,Mountain stage
+2009,10,2009-07-14,Limoges,Issoudun,194.5,Flat stage
+2009,11,2009-07-15,Vatan,Saint-Fargeau,192.0,Flat stage
+2009,12,2009-07-16,Tonnerre,Vittel,211.5,Flat stage
+2009,13,2009-07-17,Vittel,Colmar,200.0,Medium mountain stage
+2009,14,2009-07-18,Colmar,Besançon,199.0,Flat stage
+2009,15,2009-07-19,Pontarlier,Verbier (Switzerland),207.5,Mountain Stage
+2009,16,2009-07-21,Martigny (Switzerland),Bourg-Saint-Maurice,159.0,Mountain Stage
+2009,17,2009-07-22,Bourg-Saint-Maurice,Le Grand-Bornand,169.5,Mountain Stage
+2009,18,2009-07-23,Annecy,Annecy,40.5,Individual time trial
+2009,19,2009-07-24,Bourgoin-Jallieu,Aubenas,178.0,Flat stage
+2009,20,2009-07-25,Montélimar,Mont Ventoux,167.0,Mountain stage
+2009,21,2009-07-26,Montereau-Fault-Yonne,Paris,164.0,Flat stage
+2010,P,2010-07-03,Rotterdam (Netherlands),Rotterdam (Netherlands),8.9,Individual time trial
+2010,1,2010-07-04,Rotterdam,Brussels (Belgium),223.5,Flat stage
+2010,2,2010-07-05,Brussels,Spa (Belgium),201.0,Flat stage
+2010,3,2010-07-06,Wanze (Belgium),Arenberg Porte du Hainaut,213.0,Flat cobblestone stage
+2010,4,2010-07-07,Cambrai,Reims,153.5,Flat stage
+2010,5,2010-07-08,Épernay,Montargis,187.5,Flat stage
+2010,6,2010-07-09,Montargis,Gueugnon,227.5,Flat stage
+2010,7,2010-07-10,Tournus,Station des Rousses,165.5,Medium mountain stage
+2010,8,2010-07-11,Station des Rousses,Morzine-Avoriaz,189.0,Mountain stage
+2010,9,2010-07-13,Morzine-Avoriaz,Saint-Jean-de-Maurienne,204.5,Mountain stage
+2010,10,2010-07-14,Chambéry,Gap,179.0,Medium mountain stage
+2010,11,2010-07-15,Sisteron,Bourg-lès-Valence,184.5,Flat stage
+2010,12,2010-07-16,Bourg-de-Péage,Mende,210.5,Medium mountain stage
+2010,13,2010-07-17,Rodez,Revel,196.0,Flat stage
+2010,14,2010-07-18,Revel,Ax 3 Domaines,184.5,Mountain stage
+2010,15,2010-07-19,Pamiers,Bagnères-de-Luchon,187.5,Mountain stage
+2010,16,2010-07-20,Bagnères-de-Luchon,Pau,199.5,Mountain stage
+2010,17,2010-07-22,Pau,Col du Tourmalet,174.0,Mountain stage
+2010,18,2010-07-23,Salies-de-Béarn,Bordeaux,198.0,Flat stage
+2010,19,2010-07-24,Bordeaux,Pauillac,52.0,Individual time trial
+2010,20,2010-07-25,Longjumeau,Paris,102.5,Flat stage
+2011,1,2011-07-02,Passage du Gois,Mont des Alouettes,191.5,Flat stage
+2011,2,2011-07-03,Les Essarts,Les Essarts,23.0,Team time trial
+2011,3,2011-07-04,Olonne-sur-Mer,Redon,198.0,Flat stage
+2011,4,2011-07-05,Lorient,Mûr-de-Bretagne,172.5,Flat stage
+2011,5,2011-07-06,Carhaix,Cap Fréhel,164.5,Flat stage
+2011,6,2011-07-07,Dinan,Lisieux,226.5,Flat stage
+2011,7,2011-07-08,Le Mans,Châteauroux,218.0,Flat stage
+2011,8,2011-07-09,Aigurande,Super Besse,189.0,Medium mountain stage
+2011,9,2011-07-10,Issoire,Saint-Flour,208.0,Medium mountain stage
+2011,10,2011-07-12,Aurillac,Carmaux,158.0,Flat stage
+2011,11,2011-07-13,Blaye-les-Mines,Lavaur,167.5,Flat stage
+2011,12,2011-07-14,Cugnaux,Luz Ardiden,211.0,High mountain stage
+2011,13,2011-07-15,Pau,Lourdes,152.5,High mountain stage
+2011,14,2011-07-16,Saint-Gaudens,Plateau de Beille,168.5,High mountain stage
+2011,15,2011-07-17,Limoux,Montpellier,192.5,Flat stage
+2011,16,2011-07-19,Saint-Paul-Trois-Châteaux,Gap,162.5,Medium mountain stage
+2011,17,2011-07-20,Gap,Pinerolo (Italy),179.0,High mountain stage
+2011,18,2011-07-21,Pinerolo (Italy),Col du Galibier,200.5,High mountain stage
+2011,19,2011-07-22,Modane,Alpe d'Huez,109.5,High mountain stage
+2011,20,2011-07-23,Grenoble,Grenoble,42.5,Individual time trial
+2011,21,2011-07-24,Créteil,Paris,95.0,Flat stage
+2012,P,2012-06-30,Liège (Belgium),Liège (Belgium),6.4,Individual time trial
+2012,1,2012-07-01,Liège (Belgium),Seraing (Belgium),198.0,Flat stage
+2012,2,2012-07-02,Visé (Belgium),Tournai (Belgium),207.5,Flat stage
+2012,3,2012-07-03,Orchies,Boulogne-sur-Mer,197.0,Medium mountain stage
+2012,4,2012-07-04,Abbeville,Rouen,214.5,Flat stage
+2012,5,2012-07-05,Rouen,Saint-Quentin,196.5,Flat stage
+2012,6,2012-07-06,Épernay,Metz,205.0,Flat stage
+2012,7,2012-07-07,Tomblaine,La Planche des Belles Filles,199.0,Medium mountain stage
+2012,8,2012-07-08,Belfort,Porrentruy (Switzerland),157.5,Medium mountain stage
+2012,9,2012-07-09,Arc-et-Senans,Besançon,41.5,Individual time trial
+2012,10,2012-07-11,Mâcon,Bellegarde-sur-Valserine,194.5,High mountain stage
+2012,11,2012-07-12,Albertville,La Toussuire-Les Sybelles,148.0,High mountain stage
+2012,12,2012-07-13,Saint-Jean-de-Maurienne,Annonay-Davézieux,226.0,Medium mountain stage
+2012,13,2012-07-14,Saint-Paul-Trois-Châteaux,Cap d'Agde,217.0,Flat stage
+2012,14,2012-07-15,Limoux,Foix,191.0,High mountain stage
+2012,15,2012-07-16,Samatan,Pau,158.5,Flat stage
+2012,16,2012-07-18,Pau,Bagnères-de-Luchon,197.0,High mountain stage
+2012,17,2012-07-19,Bagnères-de-Luchon,Peyragudes,143.5,High mountain stage
+2012,18,2012-07-20,Blagnac,Brive-la-Gaillarde,222.5,Flat stage
+2012,19,2012-07-21,Bonneval,Chartres,53.5,Individual time trial
+2012,20,2012-07-22,Rambouillet,Paris,120.0,Flat stage
+2013,1,2013-06-29,Porto-Vecchio,Bastia,213.0,Flat stage
+2013,2,2013-06-30,Bastia,Ajaccio,156.0,Medium mountain stage
+2013,3,2013-07-01,Ajaccio,Calvi,145.5,Medium mountain stage
+2013,4,2013-07-02,Nice,Nice,25.0,Team time trial
+2013,5,2013-07-03,Cagnes-sur-Mer,Marseille,228.5,Flat stage
+2013,6,2013-07-04,Aix-en-Provence,Montpellier,176.5,Flat stage
+2013,7,2013-07-05,Montpellier,Albi,205.5,Flat stage
+2013,8,2013-07-06,Castres,Ax 3 Domaines,195.0,High mountain stage
+2013,9,2013-07-07,Saint-Girons,Bagnères-de-Bigorre,168.5,High mountain stage
+2013,10,2013-07-09,Saint-Gildas-des-Bois,Saint-Malo,197.0,Flat stage
+2013,11,2013-07-10,Avranches,Mont Saint-Michel,33.0,Individual time trial
+2013,12,2013-07-11,Fougères,Tours,218.0,Flat stage
+2013,13,2013-07-12,Tours,Saint-Amand-Montrond,173.0,Flat stage
+2013,14,2013-07-13,Saint-Pourçain-sur-Sioule,Lyon,191.0,Medium mountain stage
+2013,15,2013-07-14,Givors,Mont Ventoux,242.5,High mountain stage
+2013,16,2013-07-16,Vaison-la-Romaine,Gap,168.0,High mountain stage
+2013,17,2013-07-17,Embrun,Chorges,32.0,Individual time trial
+2013,18,2013-07-18,Gap,Alpe d'Huez,172.5,High mountain stage
+2013,19,2013-07-19,Le Bourg-d'Oisans,Le Grand-Bornand,204.5,High mountain stage
+2013,20,2013-07-20,Annecy,Semnoz,125.0,High mountain stage
+2013,21,2013-07-21,Versailles,Paris,133.5,Flat stage
+2014,1,2014-07-05,Leeds,Harrogate (United Kingdom),190.5,Flat stage
+2014,2,2014-07-06,York,Sheffield (United Kingdom),201.0,Medium mountain stage
+2014,3,2014-07-07,Cambridge,London (United Kingdom),155.0,Flat stage
+2014,4,2014-07-08,Le Touquet-Paris-Plage,Lille Metropole,163.5,Flat stage
+2014,5,2014-07-09,Ypres (Belgium),Arenberg Porte du Hainaut,152.5,Medium mountain stage
+2014,6,2014-07-10,Arras,Reims,194.0,Flat stage
+2014,7,2014-07-11,Épernay,Nancy,234.5,Flat stage
+2014,8,2014-07-12,Tomblaine,Gérardmer La Mauselaine,161.0,Medium mountain stage
+2014,9,2014-07-13,Gérardmer,Mulhouse,170.0,Medium mountain stage
+2014,10,2014-07-14,Mulhouse,La Planche des Belles Filles,161.5,High mountain stage
+2014,11,2014-07-16,Besançon,Oyonnax,187.5,Medium mountain stage
+2014,12,2014-07-17,Bourg-en-Bresse,Saint-Étienne,185.5,Flat stage
+2014,13,2014-07-18,Saint-Étienne,Chamrousse,197.5,High mountain stage
+2014,14,2014-07-19,Grenoble,Risoul,177.0,High mountain stage
+2014,15,2014-07-20,Tallard,Nîmes,222.0,Flat stage
+2014,16,2014-07-22,Carcassonne,Bagnères-de-Luchon,237.5,High mountain stage
+2014,17,2014-07-23,Saint-Gaudens,Saint-Lary Pla d’Adet,124.5,High mountain stage
+2014,18,2014-07-24,Pau,Hautacam,145.5,High mountain stage
+2014,19,2014-07-25,Maubourguet Pays du Val d’Adour,Bergerac,208.5,Flat stage
+2014,20,2014-07-26,Bergerac,Périgueux,54.0,Individual time trial
+2014,21,2014-07-27,Évry,Paris,137.5,Flat stage
+2015,1,2015-07-04,Utrecht (Netherlands),Utrecht (Netherlands),13.8,Individual time trial
+2015,2,2015-07-05,Utrecht (Netherlands),Zeeland (Netherlands),166.0,Flat stage
+2015,3,2015-07-06,Antwerp (Belgium),Huy (Belgium),159.5,Medium mountain stage
+2015,4,2015-07-07,Seraing (Belgium),Cambrai,223.5,Medium mountain stage
+2015,5,2015-07-08,Arras,Amiens,189.5,Flat stage
+2015,6,2015-07-09,Abbeville,Le Havre,191.5,Flat stage
+2015,7,2015-07-10,Livarot,Fougères,190.5,Flat stage
+2015,8,2015-07-11,Rennes,Mûr-de-Bretagne,181.5,Medium mountain stage
+2015,9,2015-07-12,Vannes,Plumelec,28.0,Team time trial
+2015,10,2015-07-14,Tarbes,La Pierre Saint-Martin,167.0,Medium mountain stage
+2015,11,2015-07-15,Pau,Cauterets,188.0,High mountain stage
+2015,12,2015-07-16,Lannemezan,Plateau de Beille,195.0,High mountain stage
+2015,13,2015-07-17,Muret,Rodez,198.5,Medium mountain stage
+2015,14,2015-07-18,Rodez,Mende,178.5,Medium mountain stage
+2015,15,2015-07-19,Mende,Valence,183.0,Flat stage
+2015,16,2015-07-20,Bourg-de-Péage,Gap,201.0,Medium mountain stage
+2015,17,2015-07-22,Digne-les-Bains,Pra-Loup,161.0,High mountain stage
+2015,18,2015-07-23,Gap,Saint-Jean-de-Maurienne,186.5,High mountain stage
+2015,19,2015-07-24,Saint-Jean-de-Maurienne,La Toussuire – Les Sybelles,138.0,High mountain stage
+2015,20,2015-07-25,Modane,Alpe d'Huez,110.5,High mountain stage
+2015,21,2015-07-26,Sèvres,Paris,109.5,Flat stage
+2016,1,2016-07-02,Mont Saint-Michel,Utah Beach,188.0,Flat stage
+2016,2,2016-07-03,Saint-Lô,Cherbourg-en-Cotentin,183.0,Flat stage
+2016,3,2016-07-04,Granville,Angers,223.5,Flat stage
+2016,4,2016-07-05,Saumur,Limoges,237.5,Flat stage
+2016,5,2016-07-06,Limoges,Le Lioran,216.0,Medium mountain stage
+2016,6,2016-07-07,Arpajon-sur-Cère,Montauban,190.5,Flat stage
+2016,7,2016-07-08,L'Isle-Jourdain,Lac de Payolle,162.5,Medium mountain stage
+2016,8,2016-07-09,Pau,Bagnères-de-Luchon,184.0,High mountain stage
+2016,9,2016-07-10,Vielha Val d'Aran (Spain),Andorra-Arcalis (Andorra),184.5,High mountain stage
+2016,10,2016-07-12,Escaldes-Engordany (Andorra),Revel,197.0,Medium mountain stage
+2016,11,2016-07-13,Carcassonne,Montpellier,162.5,Flat stage
+2016,12,2016-07-14,Montpellier,Chalet Reynard,178.0,High mountain stage
+2016,13,2016-07-15,Bourg-Saint-Andéol,La Caverne du Pont-d'Arc,37.5,Individual time trial
+2016,14,2016-07-16,Montélimar,Villars-les-Dombes,208.5,Flat stage
+2016,15,2016-07-17,Bourg-en-Bresse,Culoz,160.0,High mountain stage
+2016,16,2016-07-18,Moirans-en-Montagne,Bern (Switzerland),209.0,Flat stage
+2016,17,2016-07-20,Bern (Switzerland),Finhaut–Émosson (Switzerland),184.5,High mountain stage
+2016,18,2016-07-21,Sallanches,Megève,17.0,Mountain time trial
+2016,19,2016-07-22,Albertville,Saint Gervais-les-Bains,146.0,High mountain stage
+2016,20,2016-07-23,Megève,Morzine,146.5,High mountain stage
+2016,21,2016-07-24,Chantilly,Paris,113.0,Flat stage
+2017,1,2017-07-01,Düsseldorf (Germany),Düsseldorf (Germany),14.0,Individual time trial
+2017,2,2017-07-02,Düsseldorf (Germany),Liège (Belgium),203.5,Flat stage
+2017,3,2017-07-03,Verviers (Belgium),Longwy,212.5,Medium mountain stage
+2017,4,2017-07-04,Mondorf-les-Bains (Luxembourg),Vittel,207.5,Flat stage
+2017,5,2017-07-05,Vittel,La Planche des Belles Filles,160.5,Medium mountain stage
+2017,6,2017-07-06,Vesoul,Troyes,216.0,Flat stage
+2017,7,2017-07-07,Troyes,Nuits-Saint-Georges,213.5,Flat stage
+2017,8,2017-07-08,Dole,Station des Rousses,187.5,Medium mountain stage
+2017,9,2017-07-09,Nantua,Chambéry,181.5,High mountain stage
+2017,10,2017-07-11,Périgueux,Bergerac,178.0,Flat stage
+2017,11,2017-07-12,Eymet,Pau,203.5,Flat stage
+2017,12,2017-07-13,Pau,Peyragudes,214.5,High mountain stage
+2017,13,2017-07-14,Saint-Girons,Foix,101.0,High mountain stage
+2017,14,2017-07-15,Blagnac,Rodez,181.5,Medium mountain stage
+2017,15,2017-07-16,Laissac-Sévérac-l'Église,Le Puy-en-Velay,189.5,Medium mountain stage
+2017,16,2017-07-18,Le Puy-en-Velay,Romans-sur-Isère,165.0,Medium mountain stage
+2017,17,2017-07-19,La Mure,Serre Chevalier,183.0,High mountain stage
+2017,18,2017-07-20,Briançon,Col d'Izoard,179.5,High mountain stage
+2017,19,2017-07-21,Embrun,Salon-de-Provence,222.5,Flat stage
+2017,20,2017-07-22,Marseille,Marseille,22.5,Individual time trial
+2017,21,2017-07-23,Montgeron,Paris,103.0,Flat stage
+2018,1,2018-07-07,Noirmoutier-en-l'Île,Fontenay-le-Comte,201.0,
+2018,2,2018-07-08,Mouilleron-Saint-Germain,La Roche-sur-Yon,182.5,
+2018,3,2018-07-09,Cholet,Cholet,35.5,
+2018,4,2018-07-10,La Baule,Sarzeau,195.0,
+2018,5,2018-07-11,Lorient,Quimper,204.5,
+2018,6,2018-07-12,Brest,Mûr-de-Bretagne,181.0,
+2018,7,2018-07-13,Fougères,Chartres,231.0,
+2018,8,2018-07-14,Dreux,Amiens,181.0,
+2018,9,2018-07-15,Arras,Roubaix,156.5,
+2018,10,2018-07-17,Annecy,Le Grand-Bornand,158.5,
+2018,11,2018-07-18,Albertville,La Rosière,108.5,
+2018,12,2018-07-19,Bourg-Saint-Maurice,Alpe d'Huez,175.5,
+2018,13,2018-07-20,Le Bourg-d'Oisans,Valence,169.5,
+2018,14,2018-07-21,Saint-Paul-Trois-Châteaux,Mende,188.0,
+2018,15,2018-07-22,Millau,Carcassonne,181.5,
+2018,16,2018-07-24,Carcassonne,Bagnères-de-Luchon,218.0,
+2018,17,2018-07-25,Bagnères-de-Luchon,Saint-Lary-Soulan,65.0,
+2018,18,2018-07-26,Trie-sur-Baïse,Pau,171.0,
+2018,19,2018-07-27,Lourdes,Laruns,200.5,
+2018,20,2018-07-28,Saint-Pée-sur-Nivelle,Espelette,31.0,
+2018,21,2018-07-29,Houilles,Paris,116.0,
+2019,1,2019-07-06,Brussels (Belgium),Brussels (Belgium) via Charleroi (Belgium),194.5,Flat stage
+2019,2,2019-07-07,Brussels-Royal Palace (Belgium),Brussels-Atomium (Belgium),27.6,Team time trial
+2019,3,2019-07-08,Binche (Belgium),Épernay,215.0,Hilly stage
+2019,4,2019-07-09,Reims,Nancy,213.5,Flat stage
+2019,5,2019-07-10,Saint-Dié-des-Vosges,Colmar,175.5,Hilly stage
+2019,6,2019-07-11,Mulhouse,La Planche des Belles Filles,160.5,Mountain stage
+2019,7,2019-07-12,Belfort,Chalon-sur-Saône,230.0,Flat stage
+2019,8,2019-07-13,Mâcon,Saint-Étienne,200.0,Hilly stage
+2019,9,2019-07-14,Saint-Étienne,Brioude,170.5,Hilly stage
+2019,10,2019-07-15,Saint-Flour,Albi,217.5,Flat stage
+2019,11,2019-07-17,Albi,Toulouse,167.0,Flat stage
+2019,12,2019-07-18,Toulouse,Bagnères-de-Bigorre,209.5,Mountain stage
+2019,13,2019-07-19,Pau,Pau,27.2,Individual time trial
+2019,14,2019-07-20,Tarbes,Col du Tourmalet,111.0,Mountain stage
+2019,15,2019-07-21,Limoux,Foix Prat d'Albis,185.0,Mountain stage
+2019,16,2019-07-23,Nîmes,Nîmes,177.0,Flat stage
+2019,17,2019-07-24,Pont du Gard,Gap,200.0,Hilly stage
+2019,18,2019-07-25,Embrun,Valloire,208.0,Mountain stage
+2019,19,2019-07-26,Saint-Jean-de-Maurienne,Col de l'Iseran,89.0,Mountain stage
+2019,20,2019-07-27,Albertville,Val Thorens,59.5,Mountain stage
+2019,21,2019-07-28,Rambouillet,Paris,128.0,Flat stage
+2020,1,2020-08-29,Nice,Nice,156.0,Flat stage
+2020,2,2020-08-30,Nice,Nice,186.0,Medium mountain stage
+2020,3,2020-08-31,Nice,Sisteron,198.0,Flat stage
+2020,4,2020-09-01,Sisteron,Orcières-Merlette,160.5,Hilly stage
+2020,5,2020-09-02,Gap,Privas,183.0,Flat stage
+2020,6,2020-09-03,Le Teil,Mont Aigoual,191.0,Hilly stage
+2020,7,2020-09-04,Millau,Lavaur,168.0,Flat stage
+2020,8,2020-09-05,Cazères,Loudenvielle,141.0,Mountain stage
+2020,9,2020-09-06,Pau,Laruns,153.0,Mountain stage
+2020,10,2020-09-08,Île d'Oléron,Île de Ré,168.5,Flat stage
+2020,11,2020-09-09,Châtelaillon-Plage,Poitiers,167.0,Flat stage
+2020,12,2020-09-10,Chauvigny,Sarran,218.0,Hilly stage
+2020,13,2020-09-11,Châtel-Guyon,Puy Mary,191.5,Medium mountain stage
+2020,14,2020-09-12,Clermont-Ferrand,Lyon,194.0,Hilly stage
+2020,15,2020-09-13,Lyon,Grand Colombier,174.5,Mountain stage
+2020,16,2020-09-15,La Tour-du-Pin,Villard-de-Lans,164.0,Mountain stage
+2020,17,2020-09-16,Grenoble,Méribel,170.0,Mountain stage
+2020,18,2020-09-17,Méribel,La Roche-sur-Foron,175.0,Mountain stage
+2020,19,2020-09-18,Bourg-en-Bresse,Champagnole,166.5,Flat stage
+2020,20,2020-09-19,Lure,La Planche des Belles Filles,36.2,Mountain time trial
+2020,21,2020-09-20,Mantes-la-Jolie,Paris,122.0,Flat stage
+2021,1,2021-06-26,Brest,Landerneau,197.8,Hilly stage
+2021,2,2021-06-27,Perros-Guirec,Mûr-de-Bretagne,183.5,Medium-mountain stage
+2021,3,2021-06-28,Lorient,Pontivy,182.9,Flat stage
+2021,4,2021-06-29,Redon,Fougères,150.4,Flat stage
+2021,5,2021-06-30,Changé,Laval,27.2,Individual time trial
+2021,6,2021-07-01,Tours,Châteauroux,160.6,Flat stage
+2021,7,2021-07-02,Vierzon,Le Creusot,249.1,Medium-mountain stage
+2021,8,2021-07-03,Oyonnax,Le Grand-Bornand,150.8,Mountain stage
+2021,9,2021-07-04,Cluses,Tignes,144.9,Mountain stage
+2021,10,2021-07-06,Albertville,Valence,190.7,Flat stage
+2021,11,2021-07-07,Sorgues,Malaucène,198.9,Mountain stage
+2021,12,2021-07-08,Saint-Paul-Trois-Châteaux,Nîmes,159.4,Flat stage
+2021,13,2021-07-09,Nîmes,Carcassonne,219.9,Flat stage
+2021,14,2021-07-10,Carcassonne,Quillan,183.7,Medium-mountain stage
+2021,15,2021-07-11,Céret,Andorra la Vella (Andorra),191.3,Mountain stage
+2021,16,2021-07-13,El Pas de la Casa (Andorra),Saint-Gaudens,169.0,Medium-mountain stage
+2021,17,2021-07-14,Muret,Saint-Lary-Soulan,178.4,Mountain stage
+2021,18,2021-07-15,Pau,Luz Ardiden,129.7,Mountain stage
+2021,19,2021-07-16,Mourenx,Libourne,207.0,Flat stage
+2021,20,2021-07-17,Libourne,Saint-Émilion,30.8,Individual time trial
+2021,21,2021-07-18,Chatou,Paris,108.4,Flat stage
+2022,1,2022-07-01,Copenhagen (Denmark),Copenhagen (Denmark),13.2,Individual time trial
+2022,2,2022-07-02,Roskilde,Nyborg (Denmark),202.5,Flat stage
+2022,3,2022-07-03,Vejle,Sønderborg (Denmark),182.0,Flat stage
+2022,4,2022-07-05,Dunkirk,Calais,171.5,Hilly stage
+2022,5,2022-07-06,Lille,Arenberg,157.0,Hilly stage
+2022,6,2022-07-07,Binche (Belgium),Longwy,220.0,Hilly stage
+2022,7,2022-07-08,Tomblaine,La Super Planche des Belles Filles,176.5,Medium-mountain stage
+2022,8,2022-07-09,Dole,Lausanne (Switzerland),186.5,Hilly stage
+2022,9,2022-07-10,Aigle (Switzerland),Châtel,193.0,Mountain stage
+2022,10,2022-07-12,Morzine,Megève,148.5,Medium-mountain stage
+2022,11,2022-07-13,Albertville,Col du Granon,152.0,Mountain stage
+2022,12,2022-07-14,Briançon,Alpe d'Huez,165.5,Mountain stage
+2022,13,2022-07-15,Le Bourg-d'Oisans,Saint-Étienne,193.0,Flat stage
+2022,14,2022-07-16,Saint-Étienne,Mende,192.5,Medium-mountain stage
+2022,15,2022-07-17,Rodez,Carcassonne,202.5,Flat stage
+2022,16,2022-07-19,Carcassonne,Foix,178.5,Mountain stage
+2022,17,2022-07-20,Saint-Gaudens,Peyragudes,130.0,Mountain stage
+2022,18,2022-07-21,Lourdes,Hautacam,143.5,Mountain stage
+2022,19,2022-07-22,Castelnau-Magnoac,Cahors,188.5,Flat stage
+2022,20,2022-07-23,Lacapelle-Marival,Rocamadour,40.7,Individual time trial
+2022,21,2022-07-24,Paris La Défense Arena,Paris,116.0,Flat stage
+2023,1,2023-07-01,Bilbao (Spain),Bilbao (Spain),182.0,Medium-mountain stage
+2023,2,2023-07-02,Vitoria-Gasteiz,San Sebastián (Spain),209.0,Medium-mountain stage
+2023,3,2023-07-03,Amorebieta-Etxano (Spain),Bayonne,193.5,Flat stage
+2023,4,2023-07-04,Dax,Nogaro,182.0,Flat stage
+2023,5,2023-07-05,Pau,Laruns,163.0,Mountain stage
+2023,6,2023-07-06,Tarbes,Cauterets,145.0,Mountain stage
+2023,7,2023-07-07,Mont-de-Marsan,Bordeaux,170.0,Flat stage
+2023,8,2023-07-08,Libourne,Limoges,201.0,Hilly stage
+2023,9,2023-07-09,Saint-Léonard-de-Noblat,Puy de Dôme,182.5,Mountain stage
+2023,10,2023-07-11,Vulcania,Issoire,167.5,Medium-mountain stage
+2023,11,2023-07-12,Clermont-Ferrand,Moulins,180.0,Flat stage
+2023,12,2023-07-13,Roanne,Belleville-en-Beaujolais,169.0,Medium-mountain stage
+2023,13,2023-07-14,Châtillon-sur-Chalaronne,Grand Colombier,138.0,Mountain stage
+2023,14,2023-07-15,Annemasse,Morzine,152.0,Mountain stage
+2023,15,2023-07-16,Les Gets,Saint-Gervais-les-Bains,179.0,Mountain stage
+2023,16,2023-07-18,Passy,Combloux,22.4,Individual time trial
+2023,17,2023-07-19,Saint-Gervais-les-Bains,Courchevel,166.0,Mountain stage
+2023,18,2023-07-20,Moûtiers,Bourg-en-Bresse,185.0,Flat stage
+2023,19,2023-07-21,Moirans-en-Montagne,Poligny,173.0,Medium-mountain stage
+2023,20,2023-07-22,Belfort,Le Markstein,133.5,Mountain stage
+2023,21,2023-07-23,Saint-Quentin-en-Yvelines,Paris,115.0,Flat stage
+2024,1,2024-06-29,Florence (Italy),Rimini (Italy),206.0,Hilly stage
+2024,2,2024-06-30,Cesenatico (Italy),Bologna (Italy),199.2,Hilly stage
+2024,3,2024-07-01,Piacenza (Italy),Turin (Italy),230.8,Flat stage
+2024,4,2024-07-02,Pinerolo (Italy),Valloire,139.6,Mountain stage
+2024,5,2024-07-03,Saint-Jean-de-Maurienne,Saint-Vulbas,177.4,Flat stage
+2024,6,2024-07-04,Mâcon,Dijon,163.5,Flat stage
+2024,7,2024-07-05,Nuits-Saint-Georges,Gevrey-Chambertin,25.3,Individual time trial
+2024,8,2024-07-06,Semur-en-Auxois,Colombey-les-Deux-Églises,183.4,Flat stage
+2024,9,2024-07-07,Troyes,Troyes,199.0,Hilly stage
+2024,10,2024-07-09,Orléans,Saint-Amand-Montrond,187.3,Flat stage
+2024,11,2024-07-10,Évaux-les-Bains,Le Lioran,211.0,Mountain stage
+2024,12,2024-07-11,Aurillac,Villeneuve-sur-Lot,203.6,Flat stage
+2024,13,2024-07-12,Agen,Pau,165.3,Flat stage
+2024,14,2024-07-13,Pau,Saint-Lary-Soulan,151.9,Mountain stage
+2024,15,2024-07-14,Loudenvielle,Plateau de Beille,197.7,Mountain stage
+2024,16,2024-07-16,Gruissan,Nîmes,188.6,Flat stage
+2024,17,2024-07-17,Saint-Paul-Trois-Châteaux,SuperDévoluy,177.8,Mountain stage
+2024,18,2024-07-18,Gap,Barcelonnette,179.5,Hilly stage
+2024,19,2024-07-19,Embrun,Isola 2000,144.6,Mountain stage
+2024,20,2024-07-20,Nice,Col de la Couillole,132.8,Mountain stage
+2024,21,2024-07-21,Monaco,Nice,33.7,Individual time trial
+2025,1,2025-07-05,Lille,Lille,184.9,Flat stage
+2025,2,2025-07-06,Lauwin-Planque,Boulogne-sur-Mer,209.1,Hilly stage
+2025,3,2025-07-07,Valenciennes,Dunkirk,178.3,Flat stage
+2025,4,2025-07-08,Amiens,Rouen,174.2,Hilly stage
+2025,5,2025-07-09,Caen,Caen,33.0,Individual time trial
+2025,6,2025-07-10,Bayeux,Vire Normandie,201.5,Hilly stage
+2025,7,2025-07-11,Saint-Malo,Guerlédan,197.0,Hilly stage
+2025,8,2025-07-12,Saint-Méen-le-Grand,Laval,171.4,Flat stage
+2025,9,2025-07-13,Chinon,Châteauroux,174.1,Flat stage
+2025,10,2025-07-14,Ennezat,Mont-Dore,165.3,Mountain stage
+2025,11,2025-07-16,Toulouse,Toulouse,156.8,Flat stage
+2025,12,2025-07-17,Auch,Hautacam,180.6,Mountain stage
+2025,13,2025-07-18,Loudenvielle,Peyragudes,10.9,Mountain time trial
+2025,14,2025-07-19,Pau,Superbagnères,182.6,Mountain stage
+2025,15,2025-07-20,Muret,Carcassonne,169.3,Hilly stage
+2025,16,2025-07-22,Montpellier,Mont Ventoux,171.5,Mountain stage
+2025,17,2025-07-23,Bollène,Valence,160.4,Flat stage
+2025,18,2025-07-24,Vif,Courchevel,171.5,Mountain stage
+2025,19,2025-07-25,Albertville,La Plagne,93.1,Mountain stage
+2025,20,2025-07-26,Nantua,Pontarlier,184.2,Hilly stage
+2025,21,2025-07-27,Mantes-la-Ville,Paris,132.3,Flat stage
+2026,1,2026-07-04,Barcelona (Spain),Barcelona (Spain),19.6,Team time trial
+2026,2,2026-07-05,Tarragona (Spain),Barcelona (Spain),168.5,Hilly stage
+2026,3,2026-07-06,Granollers (Spain),Les Angles,195.9,Mountain stage
+2026,4,2026-07-07,Carcassonne,Foix,181.9,Hilly stage
+2026,5,2026-07-08,Lannemezan,Pau,158.3,Flat stage
+2026,6,2026-07-09,Pau,Gavarnie-Gèdre,186.2,Mountain stage
+2026,7,2026-07-10,Hagetmau,Bordeaux,175.1,Flat stage
+2026,8,2026-07-11,Périgueux,Bergerac,180.4,Flat stage
+2026,9,2026-07-12,Malemort,Ussel,154.6,Hilly stage
+2026,10,2026-07-14,Aurillac,Le Lioran,166.6,Mountain stage
+2026,11,2026-07-15,Vichy,Nevers,161.3,Flat stage
+2026,12,2026-07-16,Circuit de Nevers Magny-Cours,Chalon-sur-Saône,179.1,Flat stage
+2026,13,2026-07-17,Dole,Belfort,205.8,Hilly stage
+2026,14,2026-07-18,Mulhouse,Le Markstein Fellering,155.3,Mountain stage
+2026,15,2026-07-19,Champagnole,Plateau de Solaison,183.9,Mountain stage
+2026,16,2026-07-21,Évian-les-Bains,Thonon-les-Bains,26.1,Individual time trial
+2026,17,2026-07-22,Chambéry,Voiron,174.7,Flat stage
+2026,18,2026-07-23,Voiron,Orcières-Merlette,185.2,Mountain stage
+2026,19,2026-07-24,Gap,Alpe d'Huez,127.9,Mountain stage
+2026,20,2026-07-25,Le Bourg-d'Oisans,Alpe d'Huez,170.9,Mountain stage
+2026,21,2026-07-26,Thoiry,Paris,133.0,Flat stage
