@@ -4,7 +4,10 @@ title: Títol del poema
 slug: titol-del-poema
 author: Miquel Duran-Frigola
 date: 2026-01-01
+# order: 1   # optional: explicit site position (ascending); else newest-first by date
 language: ca
+# Uncomment if code/build_web.py builds a self-contained page at the poem-folder root.
+# page: index.html
 # Computational tools used to assist this poem. Descriptions in Catalan.
 tools:
   - name: nom-de-l-eina

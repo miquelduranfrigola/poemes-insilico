@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-**poemes-computacionals** — a collection of poems in Catalan, each assisted by computational tools and paired with the Python code that produced it. The collection is published as a static website via GitHub Pages.
+**poemes-insilico** — a collection of poems in Catalan, each assisted by computational tools and paired with the Python code that produced it. The collection is published as a static website via GitHub Pages.
 
 The structure is a shared standard meant to be replicated across sibling "poemes" repositories. The authoritative spec is [`CONVENTIONS.md`](CONVENTIONS.md) — read it before adding or restructuring content.
 
@@ -15,7 +15,7 @@ The structure is a shared standard meant to be replicated across sibling "poemes
 
 ## Structure
 
-- `content/<slug>/` — one folder per poem, the standardised unit. `<slug>` is an accent-stripped ASCII slug of the Catalan title. Fixed filenames: `poem.md` (Catalan), `metadata.yml`, `README.md` (English), `install.sh`, `requirements.txt`, `code/main.py` (computation) + `code/build_web.py` (builds the page), `results/index.html` (the self-contained web page, wired via `page:`), `assets/drive-manifest.yml`.
+- `content/<slug>/` — one folder per poem, the standardised unit. `<slug>` is an accent-stripped ASCII slug of the Catalan title. Fixed filenames: `poem.md` (Catalan), `metadata.yml`, `README.md` (English), `install.sh`, `requirements.txt`, `code/main.py` (computation) + `code/build_web.py` (builds the page), `index.html` (the self-contained web page at the folder root, wired via `page:`), `data/` (inputs) + `results/` (computation outputs), `assets/drive-manifest.yml`.
 - `_template/poem/` — copy-me skeleton mirroring the poem unit.
 - `shared/` — small shared assets + repo-wide `drive-manifest.yml`.
 - `scripts/` — `new_poem.py` (scaffold), `fetch_assets.py` (Drive downloads).
@@ -43,10 +43,10 @@ pip install -r site/requirements.txt
 python site/build_site.py            # add --out DIR to change output
 ```
 
-The site builder reads each `content/<slug>/metadata.yml` and builds a left-index shell that shows each piece (its committed `results/index.html`, wired via `page:`) in an iframe. Rebuild the page with the piece's `code/build_web.py`; rebuild the site with `site/build_site.py`.
+The site builder reads each `content/<slug>/metadata.yml` and builds a left-index shell that shows each piece (its committed `index.html`, wired via `page:`) in an iframe. Rebuild the page with the piece's `code/build_web.py`; rebuild the site with `site/build_site.py`. The `_site/` folder is a disposable, git-ignored build output (a `dist/`), regenerated on every build — the only committed page is each poem's `index.html`.
 
 ## Conventions to preserve
 
-- `metadata.yml` requires `title`, `slug` (must equal the folder name), and `date` (ISO `YYYY-MM-DD`, used for site ordering — newest first).
+- `metadata.yml` requires `title`, `slug` (must equal the folder name), and `date` (ISO `YYYY-MM-DD`). Site ordering follows an optional `order:` integer (ascending); pieces without one fall back to newest-first by `date`.
 - Every poem folder keeps the same fixed filenames so the tooling and website can rely on them.
 - The repo-root `README.md` and commit messages are in Catalan.

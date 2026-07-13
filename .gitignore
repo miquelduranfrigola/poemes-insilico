@@ -1,4 +1,4 @@
-# --- poemes-computacionals ---
+# --- poemes-insilico ---
 # Generated website
 _site/
 # Per-poem virtualenvs
@@ -11,13 +11,13 @@ shared/assets/*
 !shared/assets/.gitkeep
 # macOS / editor cruft
 .DS_Store
-# Heavy, regenerable per-piece artifacts (the served results/index.html IS tracked)
+# Heavy, regenerable per-piece artifacts (the served index.html at the poem root IS tracked)
 content/*/cache/
 content/*/results/snapshots/
 content/*/results/videos/
 content/*/results/*.pdb
 # Large raw inputs (regenerable or fetched; not committed)
-content/mots-cancerosos/data/lexicon/diccionari.txt
+content/poema-malalt/data/lexicon/diccionari.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

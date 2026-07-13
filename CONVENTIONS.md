@@ -29,15 +29,19 @@ Each poem folder contains the **same fixed filenames**:
 | `install.sh` | — | Portable env setup + Drive asset fetch (contract below). |
 | `requirements.txt` | — | Python dependencies for this poem's code (optional). |
 | `code/` | English | Python code. `main.py` = computation entry; `build_web.py` = builds the page. |
-| `results/index.html` | — | The self-contained web page (served by the site; see below). |
+| `index.html` | — | The self-contained web page (served by the site; see below). |
+| `data/` | — | Input data the code reads (optional). |
+| `results/` | — | Computation outputs the code writes: CSVs, images, etc. (optional). |
 | `assets/drive-manifest.yml` | — | Links to large assets on Google Drive. |
 
 Each piece ships **one self-contained web page** at the fixed path
-`results/index.html`, built by `code/build_web.py` (inlining fonts/assets, no
-external requests), and wired into the site via `page: results/index.html` in
-`metadata.yml`. Heavy intermediates (`cache/`, `results/snapshots/`,
-`results/videos/`, big raw inputs) are git-ignored; only `results/index.html` is
-committed.
+`index.html` (the poem-folder root), built by `code/build_web.py` (inlining
+fonts/assets, no external requests), and wired into the site via
+`page: index.html` in `metadata.yml`. Keep the roles distinct: `data/` holds
+inputs, `results/` holds computation outputs, and `index.html` is the page
+itself — never buried among the outputs. Heavy intermediates (`cache/`,
+`results/snapshots/`, `results/videos/`, big raw inputs) are git-ignored; the
+committed page is `index.html`.
 
 Start a new poem by copying `_template/poem/`, or run
 `python scripts/new_poem.py "Títol en català"`.
@@ -48,9 +52,10 @@ Start a new poem by copying `_template/poem/`, or run
 title: El jardí de nombres        # Catalan; also shown as the poem title
 slug: el-jardi-de-nombres         # must match the folder name
 author: Miquel Duran-Frigola
-date: 2026-07-11                  # ISO date (YYYY-MM-DD); drives site ordering
+date: 2026-07-11                  # ISO date (YYYY-MM-DD)
+order: 1                          # optional; explicit site position (ascending)
 language: ca
-page: results/index.html         # self-contained page served verbatim by the site
+page: index.html                 # self-contained page served verbatim by the site
 tools:                            # computational tools used (may be empty)
   - name: nom-de-l-eina
     description: Com s'ha fet servir (Catalan).
@@ -60,7 +65,9 @@ description: |                    # Catalan, multi-line
   Descripció del poema i del procés.
 ```
 
-`title`, `slug` and `date` are required; the rest are optional.
+`title`, `slug` and `date` are required; the rest are optional. Site ordering is
+by `order` ascending when present; pieces without an `order` fall back to
+newest-first by `date`.
 
 ## Large files — Google Drive only
 
@@ -100,10 +107,14 @@ This keeps every poem independently reproducible.
 The site builder (`site/build_site.py`) reads every `content/<slug>/metadata.yml`
 and produces a **left-index shell** (`_site/index.html`) that lists every piece and
 shows the selected one in an iframe. Each piece is served from its committed
-`results/index.html` via the `page:` key (the builder copies it verbatim to
+`index.html` via the `page:` key (the builder copies it verbatim to
 `_site/<slug>/index.html`); a piece without `page:` falls back to templated
 `poem.md` rendering. The whole site shares one look — Space Mono on cream. GitHub
 Actions (`.github/workflows/pages.yml`) builds and deploys `_site` on push to `main`.
+
+`_site/` is a **disposable build output** — the compiled site (the equivalent of a
+`dist/` folder). It is git-ignored and rebuilt from scratch on every build, so it is
+never committed; the only committed page is each poem's `index.html`.
 
 ## Repository layout
 

@@ -1,0 +1,34 @@
+# Metadata for a single poem. All user-facing text (title, description) in Catalan.
+# This file is parsed by site/build_site.py to build the website.
+title: Hexasíl·labs de químic
+slug: hexasillabs-de-quimic
+author: Miquel Duran-Frigola
+date: 2026-07-11
+order: 3
+language: ca
+# Self-contained page served as this poem's website page, built by code/build_web.py.
+page: index.html
+# Computational tools used to assist this poem. Descriptions in Catalan.
+tools:
+  - name: sillabes.js (Softcatalà)
+    description: >-
+      Comptador de síl·labes català (motor de Softcatalà executat headless) per
+      mesurar el recompte poètic —fins a l'última tònica— de cada nom.
+  - name: nomenclatura IUPAC (català)
+    description: >-
+      Noms sistemàtics de química orgànica en català segons la Guia breu de la
+      IUPAC (traducció SCQ/IEC), amb números i lletres verbalitzats.
+# Free-form tags for grouping / filtering on the website.
+tags:
+  - oulipo
+  - restriccio
+  - quimica
+  - nomenclatura
+# Multi-line description of the poem and the process behind it (Catalan).
+description: |
+  Un poema fet de noms de molècules: cada vers és el nom IUPAC en català d'una
+  molècula real. Els noms són objectes trobats —el poeta no escriu les síl·labes,
+  les aporta la química—, de manera que el treball és seleccionar noms que encaixin
+  en un metre i agrupar-los en estrofes per família química, on la rima neix del
+  sufix del grup funcional compartit. Els números i les lletres de la nomenclatura
+  (2 → dos, N- → ena) es desconvolucionen a paraules abans de comptar.
