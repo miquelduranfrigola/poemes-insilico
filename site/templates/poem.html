@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}{{ poem.title }} — {{ site_title }}{% endblock %}
+
+{% block body %}
+<article class="poem-page">
+  <p class="kicker"><a href="{{ root }}index.html">Poemes computacionals</a></p>
+  <h1 class="p-title">{{ poem.title }}</h1>
+  <p class="p-meta">
+    <time datetime="{{ poem.date }}">{{ poem.date }}</time>
+    {% if poem.author %}· {{ poem.author }}{% endif %}
+  </p>
+
+  <div class="poem">
+    {{ poem.poem_html | safe }}
+  </div>
+
+  {% if poem.description_html or poem.tools %}
+  <section class="p-about">
+    {% if poem.description_html %}<div class="about-desc">{{ poem.description_html | safe }}</div>{% endif %}
+    {% if poem.tools %}
+    <p class="seclab">Eines</p>
+    <ul class="tool-list">
+      {% for tool in poem.tools %}
+      <li><span class="tool-name">{{ tool.name }}</span>{% if tool.description %} — <span class="tool-desc">{{ tool.description }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+</article>
+{% endblock %}
