@@ -38,7 +38,7 @@ a:hover { opacity: .55; }
   padding: 30px 22px;
   border-right: 1px solid var(--line);
 }
-.brand { line-height: 1.35; }
+.brand { line-height: 1.35; min-height: 60px; }
 .brand b { font-weight: 700; font-size: 14px; letter-spacing: -.01em; }
 .brand .author { display: block; font-size: 11px; color: var(--muted); margin-top: 4px;
   text-transform: uppercase; letter-spacing: .08em; }
@@ -96,6 +96,7 @@ a:hover { opacity: .55; }
     border-right: 0; border-bottom: 1px solid var(--line);
     display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 18px; padding: 20px 22px;
   }
+  .brand { min-height: auto; }
   .menu { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; }
   .menu li { margin: 0; }
   .menu .by { display: none; }

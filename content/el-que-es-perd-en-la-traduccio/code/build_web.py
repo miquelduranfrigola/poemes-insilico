@@ -215,7 +215,7 @@ _TEMPLATE = r"""<title>El que es perd en la traducció</title>
     .index{ width:auto; position:static; height:auto; overflow:visible; padding:20px 22px;
             border-right:0; border-bottom:1px solid var(--line);
             display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 18px; }
-    .brand{ margin:0 14px 0 0; }
+    .brand{ margin:0 14px 0 0; min-height:auto; }
     .menu{ display:flex; flex-wrap:wrap; gap:4px 16px; }
   }
   @media (prefers-reduced-motion: reduce){
